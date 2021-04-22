@@ -1,10 +1,12 @@
 import { Container, AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../img/MonaesEssentialsLogo.jpg'
+import Basket from '../Basket';
 import './style.css';
 
 const NavBar = ({ basketItems, totalCost }) => {
+    const location = useLocation();
     return (
         <>
             <AppBar position='fixed' className='custom-navbar'>
@@ -24,19 +26,26 @@ const NavBar = ({ basketItems, totalCost }) => {
                             className='logo'
                             />
                         </Typography>
-
-                        <div className='basket-wrapper'>
-                            <IconButton
-                                component={Link}
-                                to="/basket"
-                                aria-label='Show basket contents'
-                                color='inherit'
-                            >
-                                <Badge badgeContent={basketItems} color="secondary">
-                                    <ShoppingCart className='custom-basket' />
-                                </Badge>
-                            </IconButton>
-                        </div>
+                        {location.pathname === '/basket' ? (
+                            <div className='basket-wrapper'>
+                                <h2>
+                                    Total: <strong>{totalCost}</strong>
+                                </h2>
+                            </div>
+                        ) : (
+                            <div className='basket-wrapper'>
+                                <IconButton
+                                    component={Link}
+                                    to='/basket'
+                                    aria-label='Show basket contents'
+                                    color='inherit'
+                                >
+                                    <Badge badgeContent={basketItems} color='secondary'>
+                                        <ShoppingCart className='custom-basket' />
+                                    </Badge>
+                                </IconButton>
+                            </div>
+                        )}
                     </Toolbar>
                 </Container>
             </AppBar>

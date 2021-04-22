@@ -1,5 +1,8 @@
 import { Grid, Card, CardMedia, CardContent, CardActions, Typography, Container, CardActionArea, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Spinner from '../Spinner';
+import Banner from './Banner';
 import './style.css';
 
 const Basket = ({
@@ -8,8 +11,19 @@ const Basket = ({
     handleEmptyBasket,
     RemoveItemFromBasket,
 }) => {
-    if (!basketData.line_items || !basketData.line_items.length)
-        return <h1>Cart is Empty</h1>;
+    const [showSpinner, setShowSpinner] = useState(true);
+
+    const loading = () => {
+        setTimeout(() => {
+            setShowSpinner(false);
+        }, 500);
+        if (showSpinner) {
+            return <Spinner />;
+        }
+        return <Banner />;
+    };
+
+    if (!basketData.line_items || !basketData.line_items.length) return loading();
     return (
         <Container id='basket'>
             <Grid container justify='center' spacing={4}>
