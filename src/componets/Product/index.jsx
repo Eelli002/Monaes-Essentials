@@ -2,7 +2,7 @@ import { Card, CardMedia, CardContent, CardActions, Typography, CardActionArea, 
 import { ShoppingCart } from "@material-ui/icons";
 import "./style.css";
 
-const Product = ({ product, addProduct = () => {} }) => (
+const Product = ({ product, addProduct }) => (
     <Card className="custom-card">
         <CardActionArea>
             <CardMedia
