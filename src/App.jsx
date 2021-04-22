@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Products from "./componets/Products/index";
+import NavBar from "./componets/NavBar";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -18,6 +19,7 @@ const App = () => {
 
   return <Router>
     <div>
+      <NavBar />
       <Switch>
         <Route exact path="/">
           <Products products={products}/>
