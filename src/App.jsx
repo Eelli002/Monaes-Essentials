@@ -47,7 +47,10 @@ const App = () => {
 
   return <Router>
     <div>
-      <NavBar basketItems={basketData.total_items} />
+      <NavBar 
+      basketItems={basketData.total_items} 
+      totalCost={(basketData.subtotal && basketData.subtotal.formatted_with_symbol) || '0.00'} 
+      />
       <Switch>
         <Route exact path="/">
           <Products products={products} addProduct={addProduct} />
