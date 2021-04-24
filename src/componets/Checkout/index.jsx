@@ -3,6 +3,7 @@ import {
   Paper,
   Container,
   Typography,
+  CircularProgress
 } from "@material-ui/core";
 import { commerce } from "../../lib/commerce";
 import CheckoutForm from './CheckoutForm';
@@ -168,6 +169,25 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
     previousShippingSubdivision,
   ]);
 
+  if (
+      !user.shippingSubdivisions.length ||
+      !user.shippingCountries.length ||
+      !user.shippingOptions.length ||
+      !checkoutData.live
+  ) {
+      return (
+          <div className='checkout'>
+              <Container>
+                  <Paper className='paper' elevation={3}>
+                      <div className='products-spinner'>
+                          <CircularProgress />
+                      </div>
+                  </Paper>
+              </Container>
+          </div>
+      )
+  }
+
   return (
     <div className="checkout">
       <Container>
@@ -176,11 +196,11 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
             Checkout
           </Typography>
           <CheckoutForm 
-                        user={user} 
-                        handleSubmit={handleSubmit}
-                        handleChange={handleChange} 
-                        handleSelectChange={handleSelectChange}
-                    />
+                user={user} 
+                handleSubmit={handleSubmit}
+                handleChange={handleChange} 
+                handleSelectChange={handleSelectChange}
+            />
         </Paper>
       </Container>
     </div>
