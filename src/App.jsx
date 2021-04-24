@@ -5,6 +5,7 @@ import Products from "./componets/Products/index";
 import NavBar from "./componets/NavBar";
 import Footer from './componets/Footer';
 import Basket from "./componets/Basket";
+import Checkout from './componets/Checkout';
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -62,6 +63,9 @@ const App = () => {
             handleEmptyBasket={handleEmptyBasket}
             RemoveItemFromBasket={RemoveItemFromBasket}
           />
+        </Route>
+        <Route exact path='/checkout'>
+          <Checkout basketData={basketData} />
         </Route>
       </Switch>
       <Footer />

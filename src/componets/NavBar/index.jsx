@@ -1,8 +1,7 @@
 import { Container, AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../../img/MonaesEssentialsLogo.jpg'
-import Basket from '../Basket';
+import Logo from '../../img/MonaesEssentialsLogo.png'
 import './style.css';
 
 const NavBar = ({ basketItems, totalCost }) => {

@@ -1,5 +1,5 @@
 import { Container, Typography, Button, Grid } from '@material-ui/core';
-import Logo from '../../img/MonaesEssentialsLogo.jpg';
+import Logo from '../../img/BannerProduct.png';
 import './style.css';
 
 const Banner = () => {
