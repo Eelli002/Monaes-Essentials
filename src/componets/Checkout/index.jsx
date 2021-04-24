@@ -7,6 +7,8 @@ import {
 } from "@material-ui/core";
 import { commerce } from "../../lib/commerce";
 import CheckoutForm from './CheckoutForm';
+import BookingDetails from './BookingDetails';
+import { renderRelatedComponent } from './helpers';
 import "./style.css";
 
 const convertObjectToArray = (countries) =>
@@ -36,6 +38,7 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
     shippingSubdivisions: [],
   });
 
+  const [bookingStep, setBookingStep] = useState('order-address');
   const [checkoutData, setCheckoutData] = useState("");
   const previousShippingCountry = usePreviousState(user.shippingCountry);
   const previousShippingSubdivision = usePreviousState(
@@ -44,7 +47,7 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setBookingStep("order-details");
+    setBookingStep("order-details");
   };
 
   const handleChange = (e) => {
@@ -169,6 +172,16 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
     previousShippingSubdivision,
   ]);
 
+  const handleNextStep = (e, step) => {
+      e.preventDefault();
+      setBookingStep(step);
+  };
+
+  const handleBackStep = (e, step) => {
+      e.preventDefault();
+      setBookingStep(step);
+  };
+
   if (
       !user.shippingSubdivisions.length ||
       !user.shippingCountries.length ||
@@ -195,12 +208,19 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
           <Typography align="center" variant="h5" gutterBottom>
             Checkout
           </Typography>
-          <CheckoutForm 
-                user={user} 
-                handleSubmit={handleSubmit}
-                handleChange={handleChange} 
-                handleSelectChange={handleSelectChange}
-            />
+          {renderRelatedComponent({
+              user,
+            //   orderInfo,
+            //   orderError,
+              bookingStep,
+              handleChange,
+              handleSubmit,
+              checkoutData,
+              handleBackStep,
+              handleNextStep,
+            //   handleCheckout,
+              handleSelectChange,
+          })}
         </Paper>
       </Container>
     </div>
