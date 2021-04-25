@@ -1,15 +1,18 @@
 import { useState, useEffect, useRef } from "react";
 import {
+  Step,
+  StepLabel,
   Paper,
   Container,
   Typography,
-  CircularProgress
+  CircularProgress,
+  Stepper
 } from "@material-ui/core";
 import { commerce } from "../../lib/commerce";
-import CheckoutForm from './CheckoutForm';
-import BookingDetails from './BookingDetails';
 import { renderRelatedComponent } from './helpers';
 import "./style.css";
+
+const steps = ['order-address', 'order-details', 'order-payment'];
 
 const convertObjectToArray = (countries) =>
   Object.entries(countries || {}).map(([code, name]) => ({ code, name }));
@@ -208,6 +211,18 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
           <Typography align="center" variant="h5" gutterBottom>
             Checkout
           </Typography>
+          {bookingStep !== 'confirmation' && (
+            <Stepper
+              className='stepper'
+              activeStep={steps.indexOf(bookingStep)}
+            >
+              {steps.map((label) => (
+                <Step key={label}>
+                  <StepLabel>{label}</StepLabel>
+                </Step>
+              ))}
+            </Stepper>
+          )}
           {renderRelatedComponent({
               user,
               orderInfo,
