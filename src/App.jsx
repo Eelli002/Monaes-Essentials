@@ -10,6 +10,8 @@ import Checkout from './componets/Checkout';
 const App = () => {
   const [products, setProducts] = useState([]);
   const [basketData, setBasketData] = useState({});
+  const [orderInfo, setOrderInfo] = useState({});
+  const [orderError, setOrderError] = useState('');
 
   const fetchProducts = async () => {
     const response = await commerce.products.list();
@@ -46,6 +48,28 @@ const App = () => {
     setBasketData(response.cart);
   };
 
+  const refreshBasket = async () => {
+    const newBasketData = await commerce.cart.refresh();
+    setBasketData(newBasketData);
+  }
+
+  const handleCheckout = async (checkoutId, orderData) => {
+    try {
+      const incomingOrder = await commerce.checkout.capture(
+        checkoutId,
+        orderData
+      );
+      setOrderInfo(incomingOrder);
+
+      refreshBasket();
+    } catch (error) {
+      setOrderError(
+        (error.data && error.data.error && error.data.error.message) ||
+        'An error has occurred'
+      );
+    }
+  };
+
   return <Router>
     <div>
       <NavBar 
@@ -65,7 +89,12 @@ const App = () => {
           />
         </Route>
         <Route exact path='/checkout'>
-          <Checkout basketData={basketData} />
+          <Checkout 
+            basketData={basketData} 
+            handleCheckout={handleCheckout}
+            orderInfo={orderInfo}
+            orderError={orderError}
+          />
         </Route>
       </Switch>
       <Footer />

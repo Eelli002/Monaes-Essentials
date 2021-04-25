@@ -1,7 +1,7 @@
 import CheckoutForm from './CheckoutForm';
 import BookingDetails from './BookingDetails';
 // import Confirmation from './Confirmation';
-// import Payment from './Payment';
+import Payment from './Payment';
 
 export const renderRelatedComponent = ({
     user,
@@ -29,6 +29,16 @@ export const renderRelatedComponent = ({
         case 'order-details':
             return (
                 <BookingDetails
+                    user={user}
+                    checkoutData={checkoutData}
+                    handleBackStep={handleBackStep}
+                    handleNextStep={handleNextStep}
+                    handleCheckout={handleCheckout}
+                />
+            );
+        case 'order-payment':
+            return (
+                <Payment
                     user={user}
                     checkoutData={checkoutData}
                     handleBackStep={handleBackStep}
