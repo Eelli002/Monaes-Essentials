@@ -210,15 +210,15 @@ const Checkout = ({ basketData, orderInfo, orderError, handleCheckout }) => {
           </Typography>
           {renderRelatedComponent({
               user,
-            //   orderInfo,
-            //   orderError,
+              orderInfo,
+              orderError,
               bookingStep,
               handleChange,
               handleSubmit,
               checkoutData,
               handleBackStep,
               handleNextStep,
-            //   handleCheckout,
+              handleCheckout,
               handleSelectChange,
           })}
         </Paper>
