@@ -15,6 +15,10 @@ export const renderRelatedComponent = ({
     handleNextStep,
     handleCheckout,
     handleSelectChange,
+    totalPriceWithCurrency,
+    setTotalPriceWithCurrency,
+    totalPrice,
+    setTotalPrice,
 }) => {
     switch (bookingStep) {
         case 'order-address':
@@ -34,6 +38,8 @@ export const renderRelatedComponent = ({
                     handleBackStep={handleBackStep}
                     handleNextStep={handleNextStep}
                     handleCheckout={handleCheckout}
+                    setTotalPriceWithCurrency={setTotalPriceWithCurrency}
+                    setTotalPrice={setTotalPrice}
                 />
             );
         case 'order-payment':
@@ -44,6 +50,8 @@ export const renderRelatedComponent = ({
                     handleBackStep={handleBackStep}
                     handleNextStep={handleNextStep}
                     handleCheckout={handleCheckout}
+                    totalPrice={totalPrice}
+                    totalPriceWithCurrency={totalPriceWithCurrency}
                 />
             );
         case 'confirmation':

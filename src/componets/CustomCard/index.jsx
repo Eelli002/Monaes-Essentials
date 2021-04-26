@@ -20,7 +20,7 @@ const CustomCard = ({
 }) => {
     return (
         <Card className='custom-card'>
-            <Link to={`product-view/${product.id}`}>
+            <Link to={`product-view/${basket ? product.product_id : product.id}`}>
             <CardActionArea>
                 <CardMedia
                     component='img'

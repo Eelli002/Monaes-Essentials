@@ -13,11 +13,13 @@ const Payment = ({
   handleBackStep,
   handleNextStep,
   handleCheckout,
+  totalPriceWithCurrency,
+  totalPrice,
 }) => {
   const handleSubmit = async (e, elements, stripe) => {
     e.preventDefault();
 
-    if (!stripe || !elements) return;
+    if (!stripe || !elements || !totalPrice) return;
 
     const cardElement = elements.getElement(CardElement);
 
@@ -51,6 +53,7 @@ const Payment = ({
         },
         line_items: checkoutData.live.line_items,
         fulfillment: { shipping_method: user.shippingOptions },
+        pay_what_you_want: totalPrice,
       };
 
       handleCheckout(checkoutData.id, orderData);
@@ -78,7 +81,7 @@ const Payment = ({
                   disabled={!stripe}
                   color="primary"
                 >
-                  Pay {checkoutData.live.subtotal.formatted_with_symbol}
+                  Pay {totalPriceWithCurrency}
                 </Button>
               </div>
             </form>
