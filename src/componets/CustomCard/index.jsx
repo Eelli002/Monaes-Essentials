@@ -15,6 +15,7 @@ const CustomCard = ({
     basket,
     product,
     addProduct,
+    categoryName,
     updateProduct,
     RemoveItemFromBasket,
 }) => {
@@ -29,6 +30,9 @@ const CustomCard = ({
                     className='card-image'
                     image={product.media.source}
                     title=''
+                    style={{
+                        height: categoryName === 'Tumblers' ? '440px' : '',
+                    }}
                 />
                 <CardContent className='content'>
                     <Typography
