@@ -6,6 +6,7 @@ import NavBar from "./componets/NavBar";
 import Footer from './componets/Footer';
 import Basket from "./componets/Basket";
 import Checkout from './componets/Checkout';
+import ProductView from "./componets/ProductView";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -95,6 +96,9 @@ const App = () => {
             orderInfo={orderInfo}
             orderError={orderError}
           />
+        </Route>
+        <Route exact path='/product-view/:id'>
+          <ProductView addProduct={addProduct} />
         </Route>
       </Switch>
       <Footer />
