@@ -9,14 +9,28 @@ import Checkout from './componets/Checkout';
 import ProductView from "./componets/ProductView";
 
 const App = () => {
-  const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [basketData, setBasketData] = useState({});
   const [orderInfo, setOrderInfo] = useState({});
   const [orderError, setOrderError] = useState('');
 
   const fetchProducts = async () => {
-    const response = await commerce.products.list();
-    setProducts((response && response.data) || []);
+    const { data: products } = await commerce.products.list({ limit: 200 });
+    const { data: categoriesData } = await commerce.categories.list();
+
+    const productsPerCategory = categoriesData.reduce((acc, category) => {
+      return [
+        ...acc,
+        {
+          ...category,
+          productsData: products.filter((product) => 
+            product.categories.find((cat) => cat.id === category.id)
+          ),
+        },
+      ];
+    }, []);
+
+    setCategories(productsPerCategory);
   };
 
   const fetchBasketData = async () => {
@@ -79,7 +93,7 @@ const App = () => {
       />
       <Switch>
         <Route exact path="/">
-          <Products products={products} addProduct={addProduct} />
+          <Products categories={categories} addProduct={addProduct} />
         </Route>
         <Route exact path='/basket'>
           <Basket
