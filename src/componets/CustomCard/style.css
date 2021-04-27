@@ -1,8 +1,9 @@
 /************ Custom Card *************/
 .MuiCard-root.custom-card{
-    background-color: #21262d;
-    color: #c9d1d9;
+    background-color: #c9d1d9;
+    color: #121212;
     transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px 5px #121212;
 }
 
 .MuiCard-root.custom-card a {
@@ -12,6 +13,11 @@
     text-decoration: none;
 }
 
+.MuiTypography-root.product-title {
+    color: #121212;
+}
+
+
 /********* 'View' on hover *********/
 .MuiCard-root.custom-card a h3 {
     left: 0;
@@ -20,7 +26,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    color: #03dac5;
+    color: #bb86fc;
     font-size: 30px;
     position: absolute;
     justify-content: center;
@@ -29,14 +35,26 @@
     transition: opacity 0.3s ease-in;
   }
 
+  /* trying to change the hover to blacken the img only */
+/* .MuiCard-root.card-image {
+    background-color: rgb(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease-in;
+    opacity: 0;
+} */
+
 .MuiCard-root.custom-card:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px 5px #03dac5;
+    box-shadow: 0px 0px 10px 5px #bb86fc;
 }
 
+/* Again trying to cover the img only */
 .MuiCard-root.custom-card:hover a h3 {
     opacity: 1;
 }
+/* 
+.MuiCard-root.card-image:hover {
+    opacity: 1;
+} */
 
 .custom-card .content{
     padding-bottom: 0;
@@ -61,11 +79,11 @@
 
 .custom-card .price{
     margin-top: 10px;
-    color: #03dac5;
+    color: #121212;
 }
 
 .custom-card .basket-item-price{
-    color: #03dac5;
+    color: #121212;
     margin-bottom: 0;
 }
 
@@ -78,7 +96,7 @@
 }
 
 .custom-card .custom-button{
-    color: #03dac5;
+    color: #121212;
 }
 
 .custom-card .custom-button:hover {
