@@ -31,12 +31,12 @@ const CustomCard = ({
                     image={product.media.source}
                     title=''
                     style={{
-                        height: categoryName === 'Tumblers' ? '440px' : '',
+                        height: '440px',
                     }}
                 />
                 <CardContent className='content'>
                     <Typography
-                        className='title'
+                        className='product-title'
                         gutterBottom
                         variant='h5'
                         component='h2'

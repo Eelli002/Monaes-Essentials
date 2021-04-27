@@ -8,9 +8,9 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: #000000;
+    background-color: #c9d1d9;
 }
 
 .spinner > div {
-    color: #c9d1d9;
+    color: #bb86fc;
 }
