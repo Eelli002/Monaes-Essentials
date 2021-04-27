@@ -21,7 +21,7 @@ const Products = ({ categories, addProduct }) => {
                                 : '',
                             }}
                         >
-                            <Container>
+                            <Container id={category.name}>
                                 <Typography className='headline' variant='h3' component='h2'>
                                     {category.name}
                                 </Typography>

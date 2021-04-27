@@ -1,5 +1,5 @@
 .MuiAppBar-colorPrimary.custom-navbar{
-    background-color: #121212;
+    background-color: #ffffff;
 }
 
 .MuiAppBar-colorPrimary.custom-navbar > div > div {
@@ -28,4 +28,15 @@
 
 .basket-wrapper strong{
     color: #bb86fc;
+}
+
+.nav .MuiButton-label{
+    color: #121212;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.nav{
+    margin-top: 25px;
+    margin-left: 175px;
 }

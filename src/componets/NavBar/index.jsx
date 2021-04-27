@@ -1,4 +1,4 @@
-import { Container, AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core';
+import { Container, AppBar, Toolbar, IconButton, Badge, Typography, Button } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../img/MonaesEssentialsLogo.png';
@@ -25,6 +25,13 @@ const NavBar = ({ basketItems, totalCost }) => {
                             className='logo'
                             />
                         </Typography>
+                        <div className='nav-div'>
+                        <nav className='nav'>
+                            <Button href='#Tumblers'>Tumblers</Button>
+                            <Button href='#Shirts'>Shirts</Button>
+                            <Button href='#Resin Products'>Resin Products</Button>
+                        </nav>
+                        </div>
                         {location.pathname === '/basket' ? (
                             <div className='basket-wrapper'>
                                 <h2>

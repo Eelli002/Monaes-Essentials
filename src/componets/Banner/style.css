@@ -1,11 +1,17 @@
 .banner {
   padding-top: 180px;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   background-color: #21262d;
-  background-image: linear-gradient(to bottom right, #3d4a5d, #3d4a5d, #bb86fc);
+  /* background-image: linear-gradient(to bottom right, #3d4a5d, #3d4a5d, #bb86fc); */
+  background-image: linear-gradient(to bottom right, #4d004d, #cc00cc, #bb86fc,#66ffff, #ccffff);
+  /* background-image: linear-gradient(to bottom right, #680880, #d119ff, #25eef5); */
+}
+
+.MuiTypography-root.title{
+  color: #ffffff;
 }
 
 .banner > div > div {
