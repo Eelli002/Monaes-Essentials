@@ -1,7 +1,11 @@
+
+
 #products{
     padding-top: 100px;
     padding-bottom: 30px;
-    background-color: #c9d1d9;
+    /* background-color: #c9d1d9; */
+    /* background-image: url(../../img/congruent_outline.png); */
+    background-image: url(../../img/topography.png);
 }
 
 /* This changes the background color of the product list */
@@ -9,12 +13,11 @@
 #products .contents {
     padding-bottom: 20px;
     /* background-color: #c9d1d9; */
-    border-bottom: 2px;
-    border-color: #121212;
+    padding-bottom: 40px;
 }
 
 #products .contents .headline {
     padding-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 35px;
     color: #121212;
 }
