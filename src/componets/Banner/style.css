@@ -30,12 +30,14 @@
 .banner .title {
   font-size: 45px;
   margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
 }
 
 .banner a.shopping-button {
   color: #000000;
   background-color: #03dac5;
+  
 }
 
 @media (min-width: 800px) {
