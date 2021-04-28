@@ -9,6 +9,7 @@
     align-items: center;
     position: fixed;
     background-color: #c9d1d9;
+    background-image: url(../../img/topography.png);
 }
 
 .spinner > div {

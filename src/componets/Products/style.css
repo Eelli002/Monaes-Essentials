@@ -21,3 +21,8 @@
     padding-top: 35px;
     color: #121212;
 }
+
+.MuiTypography-root.headline {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
