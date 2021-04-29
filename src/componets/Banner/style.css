@@ -5,9 +5,7 @@
   display: flex;
   align-items: center;
   background-color: #21262d;
-  /* background-image: linear-gradient(to bottom right, #3d4a5d, #3d4a5d, #bb86fc); */
   background-image: linear-gradient(to bottom right, #4d004d, #cc00cc, #bb86fc,#66ffff, #ccffff);
-  /* background-image: linear-gradient(to bottom right, #680880, #d119ff, #25eef5); */
 }
 
 .MuiTypography-root.title{
@@ -37,11 +35,168 @@
 .banner a.shopping-button {
   color: #000000;
   background-color: #03dac5;
-  
 }
 
-@media (min-width: 800px) {
+/* iPad Pro Display */
+@media (max-width: 1024px) {
+  .banner {
+    height: 400px;
+    padding-top: 125px;
+    width: 996px;
+  }
+
+  .banner > div > div {
+    padding-left: 10px;
+  }
+
   .banner .title {
-    font-size: 65px;
+    font-size: 41px;
+    padding-left: 80px;
+  }
+
+  .banner a.shopping-button {
+    margin-left: 80px;
+  }
+}
+
+/* iPad (normal) Display */
+@media (max-width: 768px) {
+  .banner {
+    height: 350px;
+    width: 768px;
+  }
+  
+  .banner .title {
+    font-size: 35px;
+  }
+}
+
+/* Surface Duo Display */
+@media (max-width: 540px) {
+  .banner {
+    width: 540px;
+
+    background-color: red;
+  }
+  
+  .MuiTypography-root.title{
+    
+  
+    background-color: green;
+  }
+  
+  .banner > div > div {
+    
+    background-color: yellow;
+  }
+  
+  .banner .brand {
+    width: 250px;
+
+    background-color: purple;
+  }
+  
+  .banner .brand img {
+    
+  
+    background-color: pink;
+  }
+  
+  .banner .title {
+
+  
+    background-color: royalblue;
+  }
+  
+  .banner a.shopping-button {
+    
+    
+    background-color: sienna;
+  }
+}
+
+/* iPhone 6/7/8/ Plus Display */
+@media (max-width: 414px) {
+  .banner {
+
+
+    background-color: red;
+  }
+  
+  .MuiTypography-root.title{
+    
+  
+    background-color: green;
+  }
+  
+  .banner > div > div {
+    
+    background-color: yellow;
+  }
+  
+  .banner .brand {
+  
+    background-color: purple;
+  }
+  
+  .banner .brand img {
+    
+  
+    background-color: pink;
+  }
+  
+  .banner .title {
+
+  
+    background-color: royalblue;
+  }
+  
+  .banner a.shopping-button {
+    
+    
+    background-color: sienna;
+  }
+}
+
+/* iPhone 6/7/8/X and Smaller Display */
+@media (max-width: 375px) {
+  .banner {
+
+
+    background-color: red;
+  }
+  
+  .MuiTypography-root.title{
+    
+  
+    background-color: green;
+  }
+  
+  .banner > div > div {
+    
+    background-color: yellow;
+  }
+  
+  .banner .brand {
+  
+    background-color: purple;
+  }
+  
+  .banner .brand img {
+    
+  
+    background-color: pink;
+  }
+  
+  .banner .title {
+
+  
+    background-color: royalblue;
+  }
+  
+  .banner a.shopping-button {
+    
+    
+    background-color: sienna;
   }
 }
