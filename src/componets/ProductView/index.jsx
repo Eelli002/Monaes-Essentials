@@ -43,9 +43,10 @@ const createMarkup = (text) => {
   
     return (
       <Container className="product-view">
-        <Grid container spacing={4}>
+        <Grid container spacing={4} className='product-container'>
           <Grid item xs={12} md={8} className="image-wrapper">
             <img
+              className='image'
               onLoad={() => {
                 setLoading(false);
               }}
@@ -54,13 +55,14 @@ const createMarkup = (text) => {
             />
           </Grid>
           <Grid item xs={12} md={4} className="text">
-            <Typography variant="h2">{product.name}</Typography>
+            <Typography variant="h2" className='product-title'>{product.name}</Typography>
             <Typography
               variant="p"
+              className='product-description'
               dangerouslySetInnerHTML={createMarkup(product.description)}
             />
             <Typography variant="h3">Price: {product.price}</Typography>
-            <Grid container spacing={4}>
+            <Grid container spacing={4} className='quantity-change'>
               <Grid item xs={12}>
                 <Button
                   size="small"
