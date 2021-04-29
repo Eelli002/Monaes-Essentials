@@ -1,20 +1,32 @@
 #basket{
     margin-top: 120px;
     padding-bottom: 30px;
+    background-color: red;
+    /* margin-top: 30px; */
+    height: 800px;
+    padding-top: 80px;
+}
+
+.cart-list {
+    margin-top: 30px;
+    background-color: lightcoral;
 }
   
 #basket .MuiButton-containedSecondary{
     color: #0d1117;
+    background-color: lawngreen;
 }
   
 .actions{
     margin-top: 20px;
+    background-color:hotpink;
 }
   
 .actions a{
     color: #000000;
     margin-left: 15px;
     background-color: #03dac5;
+    background-color: indigo;
 }
   
 .actions a:hover{

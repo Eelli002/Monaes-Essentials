@@ -27,7 +27,7 @@ const Basket = ({
     if (!basketData.line_items || !basketData.line_items.length) return loading();
     return (
         <Container id='basket'>
-            <Grid container justify='center' spacing={4}>
+            <Grid container justify='center' spacing={4} className='cart-list'>
                 {basketData.line_items.map((product) => {
                     return (
                         <Grid key={product.id} item xs={12} sm={6} md={4}>
@@ -43,6 +43,7 @@ const Basket = ({
             </Grid>
             <div className='actions'>
                 <Button
+                    className='emptyCartButton'
                     size='small'
                     color='secondary'
                     variant='contained'
@@ -52,6 +53,7 @@ const Basket = ({
                 </Button>
 
                 <Button
+                    className='checkoutButton'
                     size='small'
                     variant='contained'
                     component={Link}
