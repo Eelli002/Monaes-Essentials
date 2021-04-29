@@ -41,3 +41,88 @@
     margin-top: 25px;
     margin-left: 175px;
 }
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .MuiAppBar-root.custom-navbar{
+        position: absolute;
+        /* width: auto; */
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+
+        /* background-color: red; */
+    }
+    
+    .custom-navbar .custom-title .logo{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 175px;
+        height: 114px;
+
+        /* background-color: purple; */
+    }
+
+    .basket-wrapper .custom-basket{
+        margin-right: 40px;
+
+        /* background-color: royalblue; */
+    }
+
+    .nav .MuiButton-label{
+        font-size: 20px;
+
+        /* background-color: orange; */
+    }
+    .nav{
+        margin-left: 50px;
+
+        /* background-color: orchid; */
+    }
+}
+
+@media (max-width: 414px) {
+    .MuiAppBar-colorPrimary.custom-navbar{
+        position: absolute;
+        width: 414px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+
+        background-color: red;
+    }
+
+    .MuiAppBar-colorPrimary.custom-navbar > div > div {
+        background-color: yellow;
+    }
+
+    .basket-wrapper{
+        background-color: pink;
+    }
+
+    .custom-navbar .custom-title{
+        background-color: green;
+    }
+    
+    .custom-navbar .custom-title .logo{
+        background-color: purple;
+    }
+
+    .basket-wrapper .custom-basket{
+        background-color: royalblue;
+    }
+
+    .basket-wrapper strong{
+        background-color: sienna;
+    }
+
+    .nav .MuiButton-label{
+        background-color: orange;
+    }
+    .nav{
+        background-color: orchid;
+        display: none;
+    }
+}
