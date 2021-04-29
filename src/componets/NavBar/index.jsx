@@ -27,9 +27,9 @@ const NavBar = ({ basketItems, totalCost }) => {
                         </Typography>
                         <div className='nav-div'>
                         <nav className='nav'>
-                            <Button href='#Tumblers'>Tumblers</Button>
-                            <Button href='#Shirts'>Shirts</Button>
-                            <Button href='#Resin Products'>Resin Products</Button>
+                            <Button href='/#Tumblers'>Tumblers</Button>
+                            <Button href='/#Shirts'>Shirts</Button>
+                            <Button href='/#Resin Products'>Resin Products</Button>
                         </nav>
                         </div>
                         {location.pathname === '/basket' ? (
