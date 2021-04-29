@@ -42,17 +42,14 @@
     margin-left: 175px;
 }
 
-/* Tablet View */
+/* iPad Pro View */
 @media (max-width: 1024px) {
     .MuiAppBar-root.custom-navbar{
         position: absolute;
-        /* width: auto; */
         margin-left: auto;
         margin-right: auto;
         display: flex;
         justify-content: center;
-
-        /* background-color: red; */
     }
     
     .custom-navbar .custom-title .logo{
@@ -60,69 +57,73 @@
         margin-bottom: 5px;
         width: 175px;
         height: 114px;
-
-        /* background-color: purple; */
     }
 
     .basket-wrapper .custom-basket{
         margin-right: 40px;
-
-        /* background-color: royalblue; */
     }
 
     .nav .MuiButton-label{
         font-size: 20px;
-
-        /* background-color: orange; */
     }
     .nav{
         margin-left: 50px;
-
-        /* background-color: orchid; */
     }
 }
 
-@media (max-width: 414px) {
-    .MuiAppBar-colorPrimary.custom-navbar{
-        position: absolute;
-        width: 414px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: center;
-
-        background-color: red;
-    }
-
-    .MuiAppBar-colorPrimary.custom-navbar > div > div {
-        background-color: yellow;
-    }
-
-    .basket-wrapper{
-        background-color: pink;
-    }
-
-    .custom-navbar .custom-title{
-        background-color: green;
-    }
-    
-    .custom-navbar .custom-title .logo{
-        background-color: purple;
-    }
-
+/* iPad (normal) view */
+@media (max-width: 768px) {
     .basket-wrapper .custom-basket{
-        background-color: royalblue;
-    }
-
-    .basket-wrapper strong{
-        background-color: sienna;
+        margin-right: 30px;
     }
 
     .nav .MuiButton-label{
-        background-color: orange;
+        font-size: 15px;
+        margin-left: 30px;
+        margin-right: 15px;
     }
+
     .nav{
-        background-color: orchid;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+    }
+}
+
+/* Surface Duo */
+@media (max-width: 540px) {
+    .custom-navbar .custom-title .logo{
+        width: 150px;
+        height: 98px;
+        margin-left: 20px;
+    }
+
+    .basket-wrapper .custom-basket{
+        font-size: 40px;
+    }
+
+    .nav{
         display: none;
+    }
+}
+
+/* iPhone 6/7/8 Plus Display */
+@media (max-width: 414px) {
+    .custom-navbar .custom-title .logo{
+        width: 125px;
+        height: 81px;
+        margin-left: 5px;
+    }
+
+    .basket-wrapper .custom-basket{
+        font-size: 35px;
+        margin-right: 20px;
+    }
+}
+
+/* iPhone 6/7/8/X and Smaller Display */
+@media (max-width: 375px) {
+    .basket-wrapper .custom-basket{
+        margin-right: 5px;
     }
 }
