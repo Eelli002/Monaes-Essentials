@@ -6,8 +6,8 @@ const Banner = () => {
     return (
         <div className='banner'>
             <Container>
-                <Grid container spacing={4}>
-                    <Grid item xs={12} sm={6}>
+                <Grid container spacing={4} className='banner-grid'>
+                    <Grid item xs={12} sm={6} className='title-button'>
                         <Typography className='title' variants='h1'>
                             Welcome to Monae's Essentials
                         </Typography>
