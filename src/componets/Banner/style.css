@@ -75,43 +75,24 @@
 @media (max-width: 540px) {
   .banner {
     width: 540px;
-
-    background-color: red;
-  }
-  
-  .MuiTypography-root.title{
-    
-  
-    background-color: green;
-  }
-  
-  .banner > div > div {
-    
-    background-color: yellow;
   }
   
   .banner .brand {
-    width: 250px;
-
-    background-color: purple;
-  }
-  
-  .banner .brand img {
-    
-  
-    background-color: pink;
+    width: 300px;
   }
   
   .banner .title {
-
-  
-    background-color: royalblue;
+    padding-left: 0px;
   }
   
   .banner a.shopping-button {
-    
-    
-    background-color: sienna;
+    margin-left: 140px;
+    margin-bottom: 10px;
+  }
+
+  .MuiGrid-root.banner-grid {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
