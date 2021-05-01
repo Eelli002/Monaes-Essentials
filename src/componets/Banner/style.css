@@ -42,7 +42,7 @@
   .banner {
     height: 400px;
     padding-top: 125px;
-    width: 996px;
+    width: 1024px;
   }
 
   .banner > div > div {
@@ -99,12 +99,21 @@
 /* iPhone 6/7/8/ Plus Display */
 @media (max-width: 414px) {
   .banner {
-    width: 434px;
+    width: 414px;
+    height: 315px;
+  }
+
+  .banner .title {
+    font-size: 30px;
+    color: black;
   }
 
   .banner a.shopping-button {
     font-size: 12px;
-    margin-left: 150px;
+    margin-left: 125px;
+    color: #ffffff;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background-color: #bb86fc;
   }
 }
