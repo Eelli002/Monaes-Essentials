@@ -121,42 +121,16 @@
 /* iPhone 6/7/8/X and Smaller Display */
 @media (max-width: 375px) {
   .banner {
+    width: 375px;
+    height: 300px;
+    padding-top: 90px;
+  }
 
-
-    background-color: red;
-  }
-  
-  .MuiTypography-root.title{
-    
-  
-    background-color: green;
-  }
-  
-  .banner > div > div {
-    
-    background-color: yellow;
-  }
-  
   .banner .brand {
-  
-    background-color: purple;
+    width: 250px;
   }
-  
-  .banner .brand img {
-    
-  
-    background-color: pink;
-  }
-  
-  .banner .title {
 
-  
-    background-color: royalblue;
-  }
-  
   .banner a.shopping-button {
-    
-    
-    background-color: sienna;
+    margin-bottom: 0px;
   }
 }
