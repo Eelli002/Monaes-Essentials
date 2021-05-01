@@ -167,7 +167,43 @@
   }
 }
 
-/* iPhone 5 Display */
+/* iPhone 5/SE Display */
+@media (max-width: 320px) {
+  .banner {
+    width: 320px;
+  }
+}
+
+/* Galaxy Fold Display */
+@media (max-width: 280px) {
+  .banner {
+    width: 280px;
+  }
+  
+  .MuiTypography-root.title{
+
+  }
+  
+  .banner > div > div {
+
+  }
+  
+  .banner .brand {
+
+  }
+  
+  .banner .brand img {
+
+  }
+  
+  .banner .title {
+
+  }
+  
+  .banner a.shopping-button {
+
+  }
+}
 
 /*
 320
