@@ -99,43 +99,13 @@
 /* iPhone 6/7/8/ Plus Display */
 @media (max-width: 414px) {
   .banner {
+    width: 434px;
+  }
 
-
-    background-color: red;
-  }
-  
-  .MuiTypography-root.title{
-    
-  
-    background-color: green;
-  }
-  
-  .banner > div > div {
-    
-    background-color: yellow;
-  }
-  
-  .banner .brand {
-  
-    background-color: purple;
-  }
-  
-  .banner .brand img {
-    
-  
-    background-color: pink;
-  }
-  
-  .banner .title {
-
-  
-    background-color: royalblue;
-  }
-  
   .banner a.shopping-button {
-    
-    
-    background-color: sienna;
+    font-size: 12px;
+    margin-left: 150px;
+    background-color: #bb86fc;
   }
 }
 
