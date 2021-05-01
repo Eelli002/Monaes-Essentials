@@ -142,9 +142,34 @@
   }
 }
 
+/* Galaxy S5 Display */
+@media (max-width: 360px) {
+  .banner {
+    width: 360px;
+    height: 280px;
+    padding-top: 70px;
+  }
+  
+  .banner .brand {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .banner .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+  }
+  
+  .banner a.shopping-button {
+    margin-left: 98px;
+    font-size: 11px;
+  }
+}
+
+/* iPhone 5 Display */
+
 /*
-411
-360
 320
 280
 */
