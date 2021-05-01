@@ -134,3 +134,17 @@
     margin-bottom: 0px;
   }
 }
+
+/* Pixel 2 Display */
+@media (max-width: 411px) {
+  .banner {
+    width: 411px;
+  }
+}
+
+/*
+411
+360
+320
+280
+*/
