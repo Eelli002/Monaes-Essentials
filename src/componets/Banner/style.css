@@ -237,132 +237,105 @@
 280
 */
 
-.MuiAppBar-colorPrimary.custom-navbar{
-  background-color: #ffffff;
-}
-
-.MuiAppBar-colorPrimary.custom-navbar > div > div {
-  padding: 0;
-}
-
-.basket-wrapper{
-  flex-grow: 1;
-  justify-content: flex-end;
+.MuiContainer-root.product-view {
+  height: 80vh;
   display: flex;
+  align-items: center;
+  /* margin: 150px 0 100px 0; */
+  /* padding-left: 400px; */
+  background-image: url(../../img/topography.png);
+  max-width: 1920px;
 }
 
-.custom-navbar .custom-title{
-  display: flex;
+.product-view .image-wrapper img {
+  width: 400px;
+  height: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* background-color: purple; */
 }
 
-.custom-navbar .custom-title .logo{
-  width: 200px;
-  height: 130px;
-}
-
-.basket-wrapper .custom-basket{
-  font-size: 45px;
-  color: #bb86fc;
-}
-
-.basket-wrapper strong{
-  color: #bb86fc;
-}
-
-.nav .MuiButton-label{
+.product-view .text {
   color: #121212;
-  margin-left: 50px;
-  font-weight: bold;
-  font-size: 17px;
-  font-family: 'Dancing Script', cursive;
-}
-.nav{
-  margin-top: 25px;
-  margin-left: 175px;
+  margin-top: 100px;
+  /* background-color: green; */
+  /* margin-right: 20px; */
+  /* max-width: 200px; */
 }
 
-/* iPad Pro View */
-@media (max-width: 1024px) {
-  .MuiAppBar-root.custom-navbar{
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      justify-content: center;
-  }
+.MuiGrid-root.product-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  /* background-color: hotpink; */
+  max-width: 800px;
+  /* border: 1px solid black; */
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px 5px #121212;
+  border-radius: 15px;
+  background-color: #c9d1d9;
+}
+
+.MuiTypography-root.product-title {
+  color: #121212;
   
-  .custom-navbar .custom-title .logo{
-      margin-top: 5px;
-      margin-bottom: 5px;
-      width: 175px;
-      height: 114px;
-  }
-
-  .basket-wrapper .custom-basket{
-      margin-right: 40px;
-  }
-
-  .nav .MuiButton-label{
-      font-size: 20px;
-  }
-  .nav{
-      margin-left: 50px;
-  }
 }
 
-/* iPad (normal) view */
-@media (max-width: 768px) {
-  .basket-wrapper .custom-basket{
-      margin-right: 30px;
-  }
-
-  .nav .MuiButton-label{
-      font-size: 15px;
-      margin-left: 30px;
-      margin-right: 15px;
-  }
-
-  .nav{
-      display: flex;
-      flex-direction: row;
-      margin-left: 0px;
-  }
+.MuiTypography-root.product-description {
+  font-size: 18px;
 }
 
-/* Surface Duo */
-@media (max-width: 540px) {
-  .custom-navbar .custom-title .logo{
-      width: 150px;
-      height: 98px;
-      margin-left: 20px;
+/* @media (min-width: 960px) {
+  .product-view .text {
+    margin-top: 400px;
   }
+} 
+*/
 
-  .basket-wrapper .custom-basket{
-      font-size: 40px;
-  }
-
-  .nav{
-      display: none;
-  }
+.product-view .text h2 {
+  font-size: 30px;
 }
 
-/* iPhone 6/7/8 Plus Display */
-@media (max-width: 414px) {
-  .custom-navbar .custom-title .logo{
-      width: 125px;
-      height: 81px;
-      margin-left: 5px;
-  }
-
-  .basket-wrapper .custom-basket{
-      font-size: 35px;
-      margin-right: 20px;
-  }
+.product-view .text span h1 {
+  font-size: 20px;
+  font-weight: 300;
 }
 
-/* iPhone 6/7/8/X and Smaller Display */
-@media (max-width: 375px) {
-  .basket-wrapper .custom-basket{
-      margin-right: 5px;
+.product-view .text h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.product-view .text .quantity {
+  margin-bottom: 5px;
+}
+
+.MuiContainer-root.product-view .custom-button {
+  color: #000;
+  background-color: #bb86fc;
+}
+
+.MuiContainer-root.product-view .custom-button:hover {
+  color: #c9d1d9;
+}
+
+.MuiContainer-root.product-view .custom-button svg {
+  margin-right: 10px;
+}
+
+.MuiContainer-root.product-view .increase-product-quantity {
+  background-color: #03dac5;
+  border-color: #03dac5;
+}
+
+.product-view .MuiGrid-root .MuiGrid-item {
+  padding: 5px 15px;
+}
+
+@media (min-width: 960px) {
+  .MuiContainer-root.product-view {
+    height: 88vh;
+    margin: 40px 0 0;
   }
 }
