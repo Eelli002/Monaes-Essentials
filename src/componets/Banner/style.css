@@ -236,3 +236,133 @@
 /*
 280
 */
+
+.MuiAppBar-colorPrimary.custom-navbar{
+  background-color: #ffffff;
+}
+
+.MuiAppBar-colorPrimary.custom-navbar > div > div {
+  padding: 0;
+}
+
+.basket-wrapper{
+  flex-grow: 1;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.custom-navbar .custom-title{
+  display: flex;
+}
+
+.custom-navbar .custom-title .logo{
+  width: 200px;
+  height: 130px;
+}
+
+.basket-wrapper .custom-basket{
+  font-size: 45px;
+  color: #bb86fc;
+}
+
+.basket-wrapper strong{
+  color: #bb86fc;
+}
+
+.nav .MuiButton-label{
+  color: #121212;
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: 'Dancing Script', cursive;
+}
+.nav{
+  margin-top: 25px;
+  margin-left: 175px;
+}
+
+/* iPad Pro View */
+@media (max-width: 1024px) {
+  .MuiAppBar-root.custom-navbar{
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .custom-navbar .custom-title .logo{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 175px;
+      height: 114px;
+  }
+
+  .basket-wrapper .custom-basket{
+      margin-right: 40px;
+  }
+
+  .nav .MuiButton-label{
+      font-size: 20px;
+  }
+  .nav{
+      margin-left: 50px;
+  }
+}
+
+/* iPad (normal) view */
+@media (max-width: 768px) {
+  .basket-wrapper .custom-basket{
+      margin-right: 30px;
+  }
+
+  .nav .MuiButton-label{
+      font-size: 15px;
+      margin-left: 30px;
+      margin-right: 15px;
+  }
+
+  .nav{
+      display: flex;
+      flex-direction: row;
+      margin-left: 0px;
+  }
+}
+
+/* Surface Duo */
+@media (max-width: 540px) {
+  .custom-navbar .custom-title .logo{
+      width: 150px;
+      height: 98px;
+      margin-left: 20px;
+  }
+
+  .basket-wrapper .custom-basket{
+      font-size: 40px;
+  }
+
+  .nav{
+      display: none;
+  }
+}
+
+/* iPhone 6/7/8 Plus Display */
+@media (max-width: 414px) {
+  .custom-navbar .custom-title .logo{
+      width: 125px;
+      height: 81px;
+      margin-left: 5px;
+  }
+
+  .basket-wrapper .custom-basket{
+      font-size: 35px;
+      margin-right: 20px;
+  }
+}
+
+/* iPhone 6/7/8/X and Smaller Display */
+@media (max-width: 375px) {
+  .basket-wrapper .custom-basket{
+      margin-right: 5px;
+  }
+}
