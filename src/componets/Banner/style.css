@@ -118,6 +118,13 @@
   }
 }
 
+/* Pixel 2 Display */
+@media (max-width: 411px) {
+  .banner {
+    width: 411px;
+  }
+}
+
 /* iPhone 6/7/8/X and Smaller Display */
 @media (max-width: 375px) {
   .banner {
@@ -132,13 +139,6 @@
 
   .banner a.shopping-button {
     margin-bottom: 0px;
-  }
-}
-
-/* Pixel 2 Display */
-@media (max-width: 411px) {
-  .banner {
-    width: 411px;
   }
 }
 
@@ -178,61 +178,14 @@
 @media (max-width: 280px) {
   .banner {
     width: 280px;
+    height: 270px;
   }
-  
-  .MuiTypography-root.title{
-    /*position: absolute*/
 
-    background-color: red;
-  }
-  
-  .banner > div > div {
-    /* color: #c9d1d9;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
-
-    background-color: blue;
-  }
-  
-  .banner .brand {
-    /* background-color: #121212;
-    color: #c9d1d9;
-    transition: all 0.5s ease-in-out; */
-
-    background-color: green;
-  }
-  
-  .banner .brand img {
-    /* color: #121212;
-    margin-left: 50px;
-    font-weight: bold;
-    font-size: 17px;
-    font-family: 'Dancing Script', cursive; */
-
-    background-color: yellow;
-  }
-  
   .banner .title {
-    /* position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: center; */
-
-    background-color: hotpink;
+    font-size: 21px;
   }
   
   .banner a.shopping-button {
-    /* margin-top: 5px;
-    margin-bottom: 5px;
-    width: 175px;
-    height: 114px; */
-
-    background-color: purple;
+    margin-left: 76px;
   }
 }
-
-/*
-280
-*/
