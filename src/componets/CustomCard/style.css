@@ -141,12 +141,4 @@
     
         background-color: green;
     }
-
-    .MuiTypography-root.product-title {
-        color: #121212;
-        font-family: 'Dancing Script', cursive;
-        font-weight: bold;
-    
-        background-color: green;
-    }
 }
