@@ -126,8 +126,6 @@
 }
 
 /* iPad (normal) Display */
-
-/* Make this a three product view */
 /* Make this a three product view */
 @media (max-width: 768px) {
     .MuiCard-root.custom-card{
