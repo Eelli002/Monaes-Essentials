@@ -29,6 +29,8 @@
 .MuiCardMedia-root.card-image {
     width: 370px;
     height: 440px;
+    border-bottom: solid 1px black;
+    background-image: url(../../img/oriental.png);
 }
 
 
@@ -47,8 +49,6 @@
     align-items: center;
     background-color: rgb(0, 0, 0, 0.7);
     transition: opacity 0.3s ease-in;
-
-    background-color: brown;
 }
 
 .MuiCard-root.custom-card:hover{
@@ -127,8 +127,24 @@
 
 /* iPad (normal) Display */
 @media (max-width: 768px) {
+    .MuiCard-root.custom-card{
+        width: 350px;
+        height: 460px;
+    
+        /* background-color: red; */
+    }
+
     .MuiCardMedia-root.card-image {
-        width: 285px;
-        height: 320px;
+        width: 330px;
+        height: 350px;
+    }
+
+    .custom-card .price{
+        margin-top: -10px;
+        margin-left: 25px;
+    }
+
+    .custom-card .custom-button{
+        margin-top: -24px;
     }
 }
