@@ -30,9 +30,9 @@ const CustomCard = ({
                     className='card-image'
                     image={product.media.source}
                     title=''
-                    style={{
-                        height: '440px',
-                    }}
+                    // style={{
+                    //     height: '440px',
+                    // }}
                 />
                 <CardContent className='content'>
                     <Typography

@@ -5,7 +5,7 @@
     transition: all 0.5s ease-in-out;
     box-shadow: 0px 0px 10px 5px #121212;
 
-    background-color: red;
+    /* background-color: red; */
 }
 
 .MuiCard-root.custom-card a {
@@ -14,15 +14,21 @@
     position: relative;
     text-decoration: none;
 
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .MuiTypography-root.product-title {
     color: #121212;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
+    text-align: center;
 
-    background-color: green;
+    /* background-color: green; */
+}
+
+.MuiCardMedia-root.card-image {
+    width: 370px;
+    height: 440px;
 }
 
 
@@ -113,32 +119,16 @@
 
 /* iPad Pro Display */
 @media (max-width: 1024px) {
-    .MuiCard-root.custom-card{
-        background-color: #c9d1d9;
-        color: #121212;
-        transition: all 0.5s ease-in-out;
-        box-shadow: 0px 0px 10px 5px #121212;
-    
-        background-color: red;
+    .MuiCardMedia-root.card-image {
+        width: 285px;
+        height: 320px;
     }
-    
-    .MuiCard-root.custom-card a {
-        
-    
-        background-color: blue;
-    }
+}
 
-    .card-image {
-        width: 500px;
-    
-        background-color: yellow;
-    }
-    
-    .MuiTypography-root.product-title {
-        color: #121212;
-        font-family: 'Dancing Script', cursive;
-        font-weight: bold;
-    
-        background-color: green;
+/* iPad (normal) Display */
+@media (max-width: 768px) {
+    .MuiCardMedia-root.card-image {
+        width: 285px;
+        height: 320px;
     }
 }
