@@ -126,8 +126,31 @@
 }
 
 /* iPad (normal) Display */
-/* Make this a three product view */
 @media (max-width: 768px) {
+    .MuiCard-root.custom-card{
+        width: 350px;
+        height: 460px;
+    
+        /* background-color: red; */
+    }
+
+    .MuiCardMedia-root.card-image {
+        width: 330px;
+        height: 350px;
+    }
+
+    .custom-card .price{
+        margin-top: -10px;
+        margin-left: 25px;
+    }
+
+    .custom-card .custom-button{
+        margin-top: -24px;
+    }
+}
+
+/* Surface Duo Display */
+@media (max-width: 540px) {
     .MuiCard-root.custom-card{
         width: 350px;
         height: 460px;
