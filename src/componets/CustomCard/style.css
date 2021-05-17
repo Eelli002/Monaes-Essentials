@@ -206,3 +206,37 @@
         /* background-color: yellow; */
     }
 }
+
+/* Pixel 2 Display */
+@media (max-width: 411px) {
+    .custom-card .custom-button{
+        margin-right: 5px;
+    }
+}
+
+/* iPhone 6/7/8/X and Smaller Display */
+@media (max-width: 375px) {
+    .MuiCard-root.custom-card{
+        
+    
+        background-color: red;
+    }
+
+    .MuiCardMedia-root.card-image {
+        
+
+        background-color: blue;
+    }
+
+    .custom-card .price{
+        
+
+        background-color: green;
+    }
+
+    .custom-card .custom-button{
+        margin-right: 5px;
+
+        /* background-color: yellow; */
+    }
+}
