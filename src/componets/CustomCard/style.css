@@ -240,3 +240,45 @@
         margin-top: -5px;
     }
 }
+
+/* Galaxy S5 Display */
+@media (max-width: 360px) {
+    .MuiCard-root.custom-card{
+        width: 250px;
+        height: 330px;
+    
+        /* background-color: red; */
+    }
+
+    .MuiCardMedia-root.card-image {
+        width: 230px;
+        height: 250px;
+
+        /* background-color: blue; */
+    }
+
+    .MuiTypography-root.product-title {
+        font-size: 19px;
+        margin-top: -7px;
+
+        /* background-color: violet; */
+    }
+
+    .custom-card .price{
+        font-size: 17px;
+
+        /* background-color: green; */
+    }
+
+    .custom-card .custom-button{
+        font-size: 11px;
+        margin-top: -17px;
+
+        /* background-color: yellow; */
+    }
+
+    .custom-card .custom-button svg{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+}
