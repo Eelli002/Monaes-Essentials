@@ -217,26 +217,26 @@
 /* iPhone 6/7/8/X and Smaller Display */
 @media (max-width: 375px) {
     .MuiCard-root.custom-card{
-        
-    
-        background-color: red;
+        width: 290px;
+        height: 370px;
     }
 
     .MuiCardMedia-root.card-image {
-        
-
-        background-color: blue;
+        width: 270px;
+        height: 270px;
     }
 
     .custom-card .price{
-        
-
-        background-color: green;
+        font-size: 19px;
     }
 
     .custom-card .custom-button{
         margin-right: 5px;
-
-        /* background-color: yellow; */
+        font-size: 12px;
+        margin-top: -18px;
+    }
+    .MuiTypography-root.product-title {
+        font-size: 21px;
+        margin-top: -5px;
     }
 }
