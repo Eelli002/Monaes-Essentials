@@ -174,3 +174,35 @@
         margin-top: -24px;
     }
 }
+
+/* iPhone 6/7/8 Plus Display */
+@media (max-width: 414px) {
+    .MuiCard-root.custom-card{
+        width: 310px;
+        height: 410px;
+    
+        /* background-color: red; */
+    }
+
+    .MuiCardMedia-root.card-image {
+        width: 290px;
+        height: 300px;
+
+        /* background-color: blue; */
+    }
+
+    .custom-card .price{
+        font-size: 20px;
+
+        /* background-color: green; */
+    }
+
+    .custom-card .custom-button{
+        font-size: 14px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: -20px;
+
+        /* background-color: yellow; */
+    }
+}
