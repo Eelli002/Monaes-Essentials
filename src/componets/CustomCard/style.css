@@ -154,6 +154,8 @@
     .MuiCard-root.custom-card{
         width: 350px;
         height: 460px;
+        margin-left: auto;
+        margin-right: auto;
     
         /* background-color: red; */
     }
