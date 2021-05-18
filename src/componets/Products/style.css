@@ -45,52 +45,31 @@
 
 /* Surface Duo Display */
 @media (max-width: 540px) {
-    #products{
-        
-
-        background-color: red;
-    }
-    
-    #products .contents {
-        
-
-        background-color: blue;
-    }
-    
     #products .contents .headline {
-        font-size: 35px;
-        padding-top: 25px;
-
-        background-color: green;
+        text-align: center;
+        padding-top: 15px;
     }
 }
 
 /* iPhone 6/7/8/ Plus Display */
 @media (max-width: 414px) {
-
-}
-
-/* Pixel 2 Display */
-@media (max-width: 411px) {
-
-}
-
-/* iPhone 6/7/8/X and Smaller Display */
-@media (max-width: 375px) {
-
+    #products .contents .headline {
+        font-size: 30px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
 }
 
 /* Galaxy S5 Display */
 @media (max-width: 360px) {
-
-}
-
-/* iPhone 5/SE Display */
-@media (max-width: 320px) {
-
+    #products .contents .headline {
+        font-size: 25px;
+    }
 }
 
 /* Galaxy Fold Display */
 @media (max-width: 280px) {
-
+    #products .contents .headline {
+        font-size: 21px;
+    }
 }
