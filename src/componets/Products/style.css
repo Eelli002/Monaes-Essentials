@@ -1,16 +1,11 @@
 #products{
     padding-top: 10px;
     padding-bottom: 30px;
-    /* background-color: #c9d1d9; */
-    /* background-image: url(../../img/congruent_outline.png); */
     background-image: url(../../img/topography.png);
 }
 
-/* This changes the background color of the product list */
-
 #products .contents {
     padding-bottom: 20px;
-    /* background-color: #c9d1d9; */
     padding-bottom: 40px;
 }
 
@@ -25,10 +20,61 @@
     font-weight: bold;
 }
 
+/***************** Responsive Design ********************/
+
+/* iPad Pro Display */
+@media (max-width: 1024px) {
+    #products{
+        padding-top: 0px;
+    }
+    
+    #products .contents .headline {
+        font-size: 41px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+/* iPad (normal) Display */
 @media (max-width: 768px) {
     .MuiTypography-root.headline {
         font-family: 'Dancing Script', cursive;
         font-weight: bold;
         font-size: 35px;
     }
+}
+
+/* Surface Duo Display */
+@media (max-width: 540px) {
+
+}
+
+/* iPhone 6/7/8/ Plus Display */
+@media (max-width: 414px) {
+
+}
+
+/* Pixel 2 Display */
+@media (max-width: 411px) {
+
+}
+
+/* iPhone 6/7/8/X and Smaller Display */
+@media (max-width: 375px) {
+
+}
+
+/* Galaxy S5 Display */
+@media (max-width: 360px) {
+
+}
+
+/* iPhone 5/SE Display */
+@media (max-width: 320px) {
+
+}
+
+/* Galaxy Fold Display */
+@media (max-width: 280px) {
+
 }
