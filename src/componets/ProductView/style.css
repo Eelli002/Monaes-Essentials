@@ -2,20 +2,27 @@
   height: 80vh;
   display: flex;
   align-items: center;
-  background-image: url(../../img/topography.png);
+  /* background-image: url(../../img/topography.png); */
   max-width: 1920px;
+
+  background-color: red;
 }
 
 .product-view .image-wrapper img {
-  width: 400px;
-  height: 600px;
+  width: 420px;
+  height: 500px;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-left: 10px;
+
+  background-color: blue;
 }
 
 .product-view .text {
   color: #121212;
   margin-top: 100px;
+
+  background-color: green;
 }
 
 .MuiGrid-root.product-container {
@@ -24,37 +31,51 @@
   margin-top: 30px;
   max-width: 800px;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 0px 10px 5px #121212;
+  box-shadow: 0px 0px 10px 0px #121212;
   border-radius: 15px;
   background-color: #c9d1d9;
+
+  background-color: yellow;
 }
 
 .MuiTypography-root.product-title {
   color: #121212;
   
+  background-color: orange;
 }
 
 .MuiTypography-root.product-description {
   font-size: 18px;
+
+  background-color: purple;
 }
 
 .product-view .text h2 {
   font-size: 30px;
+
+  /* background-color: brown; */
+  /* same as the orange one */ 
 }
 
 .product-view .text span h1 {
   font-size: 20px;
   font-weight: 300;
+
+  background-color: chartreuse;
 }
 
 .product-view .text h3 {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 300;
+
+  background-color: pink;
 }
 
 .product-view .text .quantity {
   margin-bottom: 5px;
+
+  background-color: brown;
 }
 
 .MuiContainer-root.product-view .custom-button {
@@ -77,11 +98,139 @@
 
 .product-view .MuiGrid-root .MuiGrid-item {
   padding: 5px 15px;
+
+  /* background-color: black; */
+  /* Same as yellow one, I think */
 }
 
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   .MuiContainer-root.product-view {
     height: 88vh;
     margin: 40px 0 0;
   }
+} */
+
+/******************* Responsive Design *********************/
+
+/* iPad Pro Display */
+@media (max-width: 1024px) {
+  .MuiContainer-root.product-view {
+    
+  
+    background-color: red;
+  }
+  
+  .product-view .image-wrapper img {
+    
+  
+    background-color: blue;
+  }
+  
+  .product-view .text {
+    
+  
+    background-color: green;
+  }
+  
+  .MuiGrid-root.product-container {
+    
+  
+    background-color: yellow;
+  }
+  
+  .MuiTypography-root.product-title {
+    
+    
+    background-color: orange;
+  }
+  
+  .MuiTypography-root.product-description {
+    
+  
+    background-color: purple;
+  }
+  
+  .product-view .text h2 {
+    
+  
+    /* background-color: brown; */
+    /* same as the orange one */ 
+  }
+  
+  .product-view .text span h1 {
+    
+  
+    background-color: chartreuse;
+  }
+  
+  .product-view .text h3 {
+    
+  
+    background-color: pink;
+  }
+  
+  .product-view .text .quantity {
+    
+  
+    background-color: brown;
+  }
+  
+  .MuiContainer-root.product-view .custom-button {
+    
+    background-color: #bb86fc;
+  }
+  
+  .MuiContainer-root.product-view .custom-button:hover {
+    
+  }
+  
+  .MuiContainer-root.product-view .custom-button svg {
+    
+  }
+  
+  .MuiContainer-root.product-view .increase-product-quantity {
+    background-color: #03dac5;
+    border-color: #03dac5;
+  }
+  
+  .product-view .MuiGrid-root .MuiGrid-item {
+  
+    /* background-color: black; */
+    /* Same as yellow one, I think */
+  }
+}
+
+/* iPad (normal) Display */
+@media (max-width: 768px) {
+
+}
+
+/* Surface Duo Display */
+@media (max-width: 540px) {
+
+}
+
+/* iPhone 6/7/8 Plus Display */
+@media (max-width: 414px) {
+
+}
+
+/* Pixel 2 Display */
+@media (max-width: 411px) {
+
+}
+
+/* iPhone 6/7/8/X and Smaller Display */
+@media (max-width: 375px) {
+
+}
+
+/* Galaxy S5 Display */
+@media (max-width: 360px) {
+
+}
+
+/* Galaxy Fold Display */
+@media (max-width: 280px) {
+
 }
