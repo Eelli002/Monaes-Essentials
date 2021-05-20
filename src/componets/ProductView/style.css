@@ -209,7 +209,7 @@
     width: 300px;
     margin-top: -40px;
   
-    /* background-color: green; */
+    background-color: green;
   }
   
   .MuiGrid-root.product-container {
@@ -284,6 +284,12 @@
   
     /* background-color: black; */
     /* Same as yellow one, I think */
+  }
+
+  .MuiGrid-root.quantity-change {
+    
+
+    background-color: red;
   }
 }
 
