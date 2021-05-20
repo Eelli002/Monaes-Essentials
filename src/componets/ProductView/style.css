@@ -191,7 +191,7 @@
   .MuiContainer-root.product-view {
     height: 800px;
   
-    /* background-color: red; */
+    background-color: red;
   }
   
   .product-view .image-wrapper img {
