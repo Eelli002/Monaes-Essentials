@@ -156,15 +156,48 @@
 /* Surface Duo Display */
 @media (max-width: 540px) {
   .MuiContainer-root.product-view {
-    height: 925px;
+    height: 800px;
+  }
+  
+  .product-view .image-wrapper img {
+    width: 200px;
+    height: 250px;
+    margin-left: 115px;
+  }
+  
+  .MuiGrid-root.product-container {
+    max-width: 450px; 
+    height: 640px;
+    margin-top: 80px;
+  }
+  
+  .product-view .text h2 {
+    font-size: 25px;
+  }
+
+  .MuiContainer-root.product-view .increase-product-quantity {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .MuiContainer-root.product-view .decrease-product-quantity {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/* iPhone 6/7/8 Plus Display */
+@media (max-width: 414px) {
+  .MuiContainer-root.product-view {
+    height: 800px;
   
     background-color: red;
   }
   
   .product-view .image-wrapper img {
-    width: 240px;
-    height: 300px;
-    margin-left: 170px;
+    width: 200px;
+    height: 250px;
+    margin-left: 115px;
     margin-top: 15px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -180,9 +213,9 @@
   }
   
   .MuiGrid-root.product-container {
-    max-width: 600px; 
-    height: 700px;
-    margin-top: 50px;
+    max-width: 450px; 
+    height: 640px;
+    margin-top: 80px;
   
     background-color: yellow;
   }
@@ -200,7 +233,7 @@
   }
   
   .product-view .text h2 {
-    
+    font-size: 25px;
   
     /* background-color: brown; */
     /* same as the orange one */ 
@@ -252,11 +285,6 @@
     /* background-color: black; */
     /* Same as yellow one, I think */
   }
-}
-
-/* iPhone 6/7/8 Plus Display */
-@media (max-width: 414px) {
-
 }
 
 /* Pixel 2 Display */
