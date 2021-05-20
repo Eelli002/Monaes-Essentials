@@ -85,6 +85,7 @@ const createMarkup = (text) => {
                   size="small"
                   color="secondary"
                   variant="contained"
+                  className="decrease-product-quantity"
                   onClick={() => {
                     handleQuantity("decries");
                   }}
