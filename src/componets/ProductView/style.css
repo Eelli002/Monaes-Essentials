@@ -1,12 +1,12 @@
-.MuiContainer-root.product-view {
+/* .MuiContainer-root.product-view {
   height: 80vh;
   display: flex;
-  align-items: center;
+  align-items: center; */
   /* background-image: url(../../img/topography.png); */
-  max-width: 1920px;
-}
+  /* max-width: 1920px;
+} */
 
-.product-view .image-wrapper img {
+/* .product-view .image-wrapper img {
   width: 420px;
   height: 500px;
   padding-top: 30px;
@@ -76,11 +76,11 @@
 }
 
 .product-view .MuiGrid-root .MuiGrid-item {
-  padding: 5px 15px;
+  padding: 5px 15px; */
 
   /* background-color: black; */
   /* Same as yellow one, I think */
-}
+/* } */
 
  /* @media (min-width: 960px) {
   .MuiContainer-root.product-view {
@@ -92,7 +92,7 @@
 /******************* Responsive Design *********************/
 
 /* iPad Pro Display */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .MuiContainer-root.product-view {
     height: 900px;
   }
@@ -104,10 +104,10 @@
   .MuiGrid-root.product-container {
     max-width: 700px; 
   }
-}
+} */
 
 /* iPad (normal) Display */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .MuiContainer-root.product-view {
     height: 925px;
   }
@@ -151,10 +151,10 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
-}
+} */
 
 /* Surface Duo Display */
-@media (max-width: 540px) {
+/* @media (max-width: 540px) {
   .MuiContainer-root.product-view {
     height: 800px;
   }
@@ -184,10 +184,10 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
-}
+} */
 
 /* iPhone 6/7/8 Plus Display */
-@media (max-width: 414px) {
+/* @media (max-width: 414px) {
   .MuiContainer-root.product-view {
     height: 800px;
   
@@ -233,13 +233,13 @@
   }
   
   .product-view .text h2 {
-    font-size: 25px;
+    font-size: 25px; */
   
     /* background-color: brown; */
     /* same as the orange one */ 
-  }
+  /* } */
   
-  .product-view .text span h1 {
+  /* .product-view .text span h1 {
     
   
     background-color: chartreuse;
@@ -278,37 +278,176 @@
   .MuiContainer-root.product-view .decrease-product-quantity {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
+  } */
   
-  .product-view .MuiGrid-root .MuiGrid-item {
+  /* .product-view .MuiGrid-root .MuiGrid-item { */
   
     /* background-color: black; */
     /* Same as yellow one, I think */
-  }
-
+  /* } */
+/* 
   .MuiGrid-root.quantity-change {
     
 
     background-color: red;
-  }
-}
+  } */
+/* } */
 
 /* Pixel 2 Display */
-@media (max-width: 411px) {
+/* @media (max-width: 411px) {
 
-}
+} */
 
 /* iPhone 6/7/8/X and Smaller Display */
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
 
-}
+} */
 
 /* Galaxy S5 Display */
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
 
-}
+} */
 
 /* Galaxy Fold Display */
-@media (max-width: 280px) {
+/* @media (max-width: 280px) {
 
+} */
+
+
+
+
+
+
+
+
+.MuiContainer-root.product-view {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.MuiGrid-root.product-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  /* transition: all 0.5s ease-in-out; */
+  box-shadow: 0px 0px 10px 0px #121212;
+  border-radius: 15px;
+  background-color: #c9d1d9;
+}
+
+.MuiGrid-root.image-wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+.MuiGrid-root.image-wrapper {
+  flex: 1;
+  max-width: 100%;
+}
+
+.MuiGrid-root.text {
+  color: #121212;
+  flex: 2;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background-color: green;
+}
+
+.MuiTypography-root.products-title {
+  font-size: 3.5vw;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  align-self: center;
+  flex: 1;
+}
+
+.MuiTypography-root.products-description {
+  font-size: 1.5vw;
+  font-weight: 500;
+  flex: 2;
+}
+
+.MuiTypography-root.products-price {
+  margin-top: 5%;
+  font-size: 1.5vw;
+  flex: 1;
+}
+
+.MuiGrid-root.quantity-change {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+
+  background-color: red;
+}
+
+.MuiButton-root.increase-product-quantity {
+  background-color: blue;
+  flex: 1;
+}
+
+.MuiTypography-root.quantity {
+  font-size: 2vw;
+  flex: 1;
+
+  background-color: yellow;
+}
+
+.MuiButton-root.decrease-product-quantity {
+  flex: 1;
+
+  background-color: blue;
+}
+
+.MuiGrid-root.add-to-cart {
+  flex: 1;
+  flex-basis: 0%;
+}
+
+.product-view .text h3 {
+  /* margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300; */
+}
+
+.MuiContainer-root.product-view .increase-product-quantity {
+  /* background-color: #03dac5;
+  border-color: #03dac5; */
+}
+
+.product-view .text .quantity {
+  /* margin-bottom: 5px; */
+}
+
+.MuiContainer-root.product-view .custom-button {
+  /* color: #000;
+  background-color: #bb86fc; */
+}
+
+.MuiContainer-root.product-view .custom-button:hover {
+  /* color: #c9d1d9; */
+}
+
+.MuiContainer-root.product-view .custom-button svg {
+  /* margin-right: 10px; */
+}
+
+.product-view .MuiGrid-root .MuiGrid-item {
+  /* padding: 5px 15px; */
+
+  /* background-color: black; */
+  /* Same as yellow one, I think */
+}
+
+ /* @media (min-width: 960px) {
+  .MuiContainer-root.product-view {
+    height: 88vh;
+    margin: 40px 0 0;
+  }
+}  */
