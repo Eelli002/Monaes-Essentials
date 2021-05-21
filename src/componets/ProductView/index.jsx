@@ -72,31 +72,31 @@ const ProductView = ({ addProduct }) => {
 
 
     {/* <----- This is a container containing an H2 element with the product name -----> */}
-          <Typography variant="h2" className='product-title'>{product.name}</Typography>
+          <Typography variant="h2" className='products-title'>{product.name}</Typography>
     {/* <----------------------------------------------------------------> */}
 
 
     {/* <----- This is a container contain a p elemtent with the product description -----> */}
           <Typography
             variant="p"
-            className='product-description'
+            className='products-description'
             dangerouslySetInnerHTML={createMarkup(product.description)}
           />
     {/* <----------------------------------------------------------------> */}
 
 
     {/* <----- This is a containter containing an H3 tag of the product price -----> */}
-          <Typography variant="h3">Price: {product.price}</Typography>
+          <Typography variant="h3" className='products-price'>Price: {product.price}</Typography>
     {/* <----------------------------------------------------------------> */}
 
 
     {/* <----- This is container containing the +, -, add-to-cart buttons and quantity ----> */}
-          <Grid container spacing={4} className='quantity-change'>
+          <Grid className='quantity-change'>
     {/* <----------------------------------------------------------------> */}
 
 
     {/* <----- This is a container that holds the increase quantity button -----> */}
-            <Grid item xs={12}>
+            <Grid>
               <Button
                 size="small"
                 variant="contained"
@@ -112,7 +112,7 @@ const ProductView = ({ addProduct }) => {
 
 
     {/* <----- This is a container that holds a h3 elemetns with the product quantity -----> */}
-            <Grid item xs={12}>
+            <Grid>
               <Typography className="quantity" variant="h3">
                 Quantity: {quantity}
               </Typography>
@@ -121,11 +121,10 @@ const ProductView = ({ addProduct }) => {
 
 
     {/* <----- This is a container that hold the decrease quantity button -----> */}
-            <Grid item xs={12}>
+            <Grid>
               <Button
-                size="small"
-                color="secondary"
-                variant="contained"
+                // size="small"
+                // variant="contained"
                 className="decrease-product-quantity"
                 onClick={() => {
                   handleQuantity("decries");
@@ -137,23 +136,22 @@ const ProductView = ({ addProduct }) => {
     {/* <----------------------------------------------------------------> */}
 
 
-    {/* <----- This is a container that holds the add to cart button -----> */}
-            <Grid item xs={12}>
+          </Grid>
+
+
+          {/* <----- This is a container that holds the add to cart button -----> */}
+          <Grid>
               <Button
                 size="large"
-                className="custom-button"
+                className="add-to-cart"
                 onClick={() => {
                   addProduct(product.id, quantity);
                 }}
               >
                 <ShoppingCart /> Add to basket
               </Button>
-            </Grid>
-    {/* <----------------------------------------------------------------> */}
-
-
-
           </Grid>
+    {/* <----------------------------------------------------------------> */}
         </Grid>
       </Grid>
       {loading && <Spinner />}
