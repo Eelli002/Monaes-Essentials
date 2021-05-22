@@ -321,7 +321,7 @@
 
 
 .MuiContainer-root.product-view {
-  height: 80vh;
+  height: 180vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -352,7 +352,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .MuiGrid-root.text {
