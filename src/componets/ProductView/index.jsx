@@ -98,8 +98,8 @@ const ProductView = ({ addProduct }) => {
     {/* <----- This is a container that holds the increase quantity button -----> */}
             <Grid>
               <Button
-                size="small"
-                variant="contained"
+                // size="small"
+                // variant="contained"
                 className="increase-product-quantity"
                 onClick={() => {
                   handleQuantity("increase");
