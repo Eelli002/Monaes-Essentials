@@ -432,7 +432,7 @@
   line-height: 1;
   min-width: 0%;
 
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .MuiButton-root.add-to-cart {
