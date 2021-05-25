@@ -76,6 +76,7 @@ const ProductView = ({ addProduct }) => {
     {/* <----------------------------------------------------------------> */}
 
 
+        <Grid className='description-and-price'>
     {/* <----- This is a container contain a p elemtent with the product description -----> */}
           <Typography
             variant="p"
@@ -88,24 +89,24 @@ const ProductView = ({ addProduct }) => {
     {/* <----- This is a containter containing an H3 tag of the product price -----> */}
           <Typography variant="h3" className='products-price'>Price: {product.price}</Typography>
     {/* <----------------------------------------------------------------> */}
-
+        </Grid>
 
     {/* <----- This is container containing the +, -, add-to-cart buttons and quantity ----> */}
           <Grid className='quantity-change'>
     {/* <----------------------------------------------------------------> */}
 
 
-    {/* <----- This is a container that holds the increase quantity button -----> */}
+    {/* <----- This is a container that holds the decrease quantity button -----> */}
             <Grid>
               <Button
                 // size="small"
                 // variant="contained"
-                className="increase-product-quantity"
+                className="decrease-product-quantity"
                 onClick={() => {
-                  handleQuantity("increase");
+                  handleQuantity("decries");
                 }}
               >
-                +
+                -
               </Button>
             </Grid>
     {/* <----------------------------------------------------------------> */}
@@ -120,17 +121,17 @@ const ProductView = ({ addProduct }) => {
     {/* <----------------------------------------------------------------> */}
 
 
-    {/* <----- This is a container that hold the decrease quantity button -----> */}
+    {/* <----- This is a container that hold the increase quantity button -----> */}
             <Grid>
               <Button
                 // size="small"
                 // variant="contained"
-                className="decrease-product-quantity"
+                className="increase-product-quantity"
                 onClick={() => {
-                  handleQuantity("decries");
+                  handleQuantity("increase");
                 }}
               >
-                -
+                +
               </Button>
             </Grid>
     {/* <----------------------------------------------------------------> */}
@@ -148,7 +149,7 @@ const ProductView = ({ addProduct }) => {
                   addProduct(product.id, quantity);
                 }}
               >
-                <ShoppingCart /> Add to basket
+                <ShoppingCart /> Add to Cart
               </Button>
           </Grid>
     {/* <----------------------------------------------------------------> */}

@@ -31,6 +31,7 @@ const NavBar = ({ basketItems, totalCost }) => {
                             <Button href='/#Resin Products'>Resin Products</Button>
                             <Button href='/#Shirts'>Shirts</Button>
                             <Button href='/#Tumblers'>Tumblers</Button>
+                            <Button href='/about'>About</Button>
                         </nav>
                         </div>
                         {location.pathname === '/basket' ? (
