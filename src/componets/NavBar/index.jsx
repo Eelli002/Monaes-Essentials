@@ -8,9 +8,9 @@ const NavBar = ({ basketItems, totalCost }) => {
     const location = useLocation();
     return (
         <>
-            <AppBar position='fixed' className='custom-navbar'>
-                <Container>
-                    <Toolbar>
+            <AppBar className='custom-navbar'>
+                {/* <Container>
+                    <Toolbar className='main-container'> */}
                         <Typography
                             component={Link}
                             to="/"
@@ -21,10 +21,11 @@ const NavBar = ({ basketItems, totalCost }) => {
                             <img
                             src={Logo}
                             alt="Monae's Essentials Logo"
-                            height='25px'
                             className='logo'
                             />
                         </Typography>
+
+
                         <div className='nav-div'>
                         <nav className='nav'>
                             <Button href='/#Key Chains'>Key Chains</Button>
@@ -34,6 +35,8 @@ const NavBar = ({ basketItems, totalCost }) => {
                             <Button href='/about'>About</Button>
                         </nav>
                         </div>
+
+                        
                         {location.pathname === '/basket' ? (
                             <div className='basket-wrapper'>
                                 <h2>
@@ -54,8 +57,8 @@ const NavBar = ({ basketItems, totalCost }) => {
                                 </IconButton>
                             </div>
                         )}
-                    </Toolbar>
-                </Container>
+                    {/* </Toolbar>
+                </Container> */}
             </AppBar>
         </>
     );
