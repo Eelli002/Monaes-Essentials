@@ -1,331 +1,11 @@
-/* .MuiContainer-root.product-view {
-  height: 80vh;
-  display: flex;
-  align-items: center; */
-  /* background-image: url(../../img/topography.png); */
-  /* max-width: 1920px;
-} */
-
-/* .product-view .image-wrapper img {
-  width: 420px;
-  height: 500px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 10px;
-}
-
-.product-view .text {
-  color: #121212;
-  margin-top: 60px;
-}
-
-.MuiGrid-root.product-container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  width: 800px; 
-  transition: all 0.5s ease-in-out;
-  box-shadow: 0px 0px 10px 0px #121212;
-  border-radius: 15px;
-  background-color: #c9d1d9;
-}
-
-.MuiTypography-root.product-title {
-  color: #121212;
-}
-
-.MuiTypography-root.product-description {
-  font-size: 18px;
-}
-
-.product-view .text h2 {
-  font-size: 30px;
-}
-
-.product-view .text span h1 {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.product-view .text h3 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.product-view .text .quantity {
-  margin-bottom: 5px;
-}
-
-.MuiContainer-root.product-view .custom-button {
-  color: #000;
-  background-color: #bb86fc;
-}
-
-.MuiContainer-root.product-view .custom-button:hover {
-  color: #c9d1d9;
-}
-
-.MuiContainer-root.product-view .custom-button svg {
-  margin-right: 10px;
-}
-
-.MuiContainer-root.product-view .increase-product-quantity {
-  background-color: #03dac5;
-  border-color: #03dac5;
-}
-
-.product-view .MuiGrid-root .MuiGrid-item {
-  padding: 5px 15px; */
-
-  /* background-color: black; */
-  /* Same as yellow one, I think */
-/* } */
-
- /* @media (min-width: 960px) {
-  .MuiContainer-root.product-view {
-    height: 88vh;
-    margin: 40px 0 0;
-  }
-}  */
-
-/******************* Responsive Design *********************/
-
-/* iPad Pro Display */
-/* @media (max-width: 1024px) {
-  .MuiContainer-root.product-view {
-    height: 900px;
-  }
-  
-  .product-view .image-wrapper img {
-    width: 400px;
-  }
-  
-  .MuiGrid-root.product-container {
-    max-width: 700px; 
-  }
-} */
-
-/* iPad (normal) Display */
-/* @media (max-width: 768px) {
-  .MuiContainer-root.product-view {
-    height: 925px;
-  }
-  
-  .product-view .image-wrapper img {
-    width: 240px;
-    height: 300px;
-    margin-left: 170px;
-    margin-top: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px #121212;
-  }
-  
-  .product-view .text {
-    width: 300px;
-    margin-top: -40px;
-  }
-  
-  .MuiGrid-root.product-container {
-    max-width: 600px; 
-    height: 700px;
-    margin-top: 50px;
-  }
-
-  .MuiTypography-root.product-description {
-    font-size: 16px;
-  }
-  
-  .product-view .text .quantity {
-    font-size: 18px;
-  }
-
-  .MuiContainer-root.product-view .increase-product-quantity {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .MuiContainer-root.product-view .decrease-product-quantity {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-} */
-
-/* Surface Duo Display */
-/* @media (max-width: 540px) {
-  .MuiContainer-root.product-view {
-    height: 800px;
-  }
-  
-  .product-view .image-wrapper img {
-    width: 200px;
-    height: 250px;
-    margin-left: 115px;
-  }
-  
-  .MuiGrid-root.product-container {
-    max-width: 450px; 
-    height: 640px;
-    margin-top: 80px;
-  }
-  
-  .product-view .text h2 {
-    font-size: 25px;
-  }
-
-  .MuiContainer-root.product-view .increase-product-quantity {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .MuiContainer-root.product-view .decrease-product-quantity {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-} */
-
-/* iPhone 6/7/8 Plus Display */
-/* @media (max-width: 414px) {
-  .MuiContainer-root.product-view {
-    height: 800px;
-  
-    background-color: red;
-  }
-  
-  .product-view .image-wrapper img {
-    width: 200px;
-    height: 250px;
-    margin-left: 115px;
-    margin-top: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  
-    background-color: blue;
-  }
-  
-  .product-view .text {
-    width: 300px;
-    margin-top: -40px;
-  
-    background-color: green;
-  }
-  
-  .MuiGrid-root.product-container {
-    max-width: 450px; 
-    height: 640px;
-    margin-top: 80px;
-  
-    background-color: yellow;
-  }
-  
-  .MuiTypography-root.product-title {
-    
-    
-    background-color: orange;
-  }
-  
-  .MuiTypography-root.product-description {
-    font-size: 16px;
-  
-    background-color: purple;
-  }
-  
-  .product-view .text h2 {
-    font-size: 25px; */
-  
-    /* background-color: brown; */
-    /* same as the orange one */ 
-  /* } */
-  
-  /* .product-view .text span h1 {
-    
-  
-    background-color: chartreuse;
-  }
-  
-  .product-view .text h3 {
-    
-  
-    background-color: pink;
-  }
-  
-  .product-view .text .quantity {
-    font-size: 18px;
-  
-    background-color: brown;
-  }
-  
-  .MuiContainer-root.product-view .custom-button {
-    
-    background-color: #bb86fc;
-  }
-  
-  .MuiContainer-root.product-view .custom-button:hover {
-    
-  }
-  
-  .MuiContainer-root.product-view .custom-button svg {
-    
-  }
-  
-  .MuiContainer-root.product-view .increase-product-quantity {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .MuiContainer-root.product-view .decrease-product-quantity {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  } */
-  
-  /* .product-view .MuiGrid-root .MuiGrid-item { */
-  
-    /* background-color: black; */
-    /* Same as yellow one, I think */
-  /* } */
-/* 
-  .MuiGrid-root.quantity-change {
-    
-
-    background-color: red;
-  } */
-/* } */
-
-/* Pixel 2 Display */
-/* @media (max-width: 411px) {
-
-} */
-
-/* iPhone 6/7/8/X and Smaller Display */
-/* @media (max-width: 375px) {
-
-} */
-
-/* Galaxy S5 Display */
-/* @media (max-width: 360px) {
-
-} */
-
-/* Galaxy Fold Display */
-/* @media (max-width: 280px) {
-
-} */
-
-
-
-
-
-
-
-
 .MuiContainer-root.product-view {
   height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+/* 
+  background: red; */
 }
 
 .MuiGrid-root.product-container {
@@ -337,6 +17,7 @@
   box-shadow: 0px 0px 10px 0px #121212;
   border-radius: 15px;
   background-color: #c9d1d9;
+
 }
 
 .MuiGrid-root.image-wrapper img{
@@ -358,37 +39,41 @@
 .MuiGrid-root.text {
   color: #121212;
   flex: 2;
-  max-width: 100%;
+  max-width: 100% ;
   display: flex;
   flex-direction: column;
 
-  background-color: green;
+  /* background-color: green; */
 }
 
 .MuiTypography-root.products-title {
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
   align-self: center;
   flex: 1;
 
-  background-color: royalblue;
+  /* background-color: royalblue; */
+}
+
+.MuiGrid-root.description-and-price {
+  flex: 4;
 }
 
 .MuiTypography-root.products-description {
-  font-size: 1.5vw;
+  font-size: 1vw;
   font-weight: 500;
-  flex: 3;
+  /* flex: 3; */
 
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 .MuiTypography-root.products-price {
-  /* margin-top: 5%; */
-  font-size: 1.5vw;
-  flex: 1;
+  margin-top: 5vh;
+  font-size: 1.25vw;
+  /* flex: 1; */
 
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 .MuiGrid-root.quantity-change {
@@ -400,12 +85,14 @@
   width: 50%;
   align-self: center;
   justify-content: space-evenly;
+  border: 0.1vw solid black;
+  border-radius: 45px;
 
-  background-color: red;
+  /* background-color: red; */
 }
 
 .MuiButton-root.increase-product-quantity {
-  font-size: 2vw;
+  font-size: 1.5vw;
   padding-top: 8%;
   padding-bottom: 8%;
   padding-left: 65%;
@@ -413,18 +100,17 @@
   line-height: 1;
   min-width: 0%;
 
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .MuiTypography-root.quantity {
-  font-size: 2vw;
+  font-size: 1.25vw;
   
-
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .MuiButton-root.decrease-product-quantity {
-  font-size: 2vw;
+  font-size: 1.5vw;
   padding-top: 8%;
   padding-bottom: 8%;
   padding-left: 110%;
@@ -432,42 +118,34 @@
   line-height: 1;
   min-width: 0%;
 
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .MuiButton-root.add-to-cart {
   flex: 1;
   flex-basis: 0%;
-  font-size: 1.5vw;
+  font-size: 1vw;
   min-width: 0%;
+  box-shadow: 0px 0px 10px 0px #121212;
+  background-color: #bb86fc;
+  margin-top: 1%;
+  transition: opacity 0.5s ease-in;
 
-  background-color: skyblue;
+  /* background-color: skyblue; */
+}
+
+.MuiButton-root.add-to-cart:hover {
+  background-color: #bb86fc;
+  color: #ffffff;
+  transition: opacity 0.5s ease-in;
+
+  /* background-color: skyblue; */
 }
 
 .MuiButton-root.add-to-cart svg{
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 }
 
-.MuiContainer-root.product-view .increase-product-quantity {
-  /* background-color: #03dac5;
-  border-color: #03dac5; */
-}
-
-
-
-
-
-
-.MuiContainer-root.product-view .custom-button svg {
-  /* margin-right: 10px; */
-}
-
-.product-view .MuiGrid-root .MuiGrid-item {
-  /* padding: 5px 15px; */
-
-  /* background-color: black; */
-  /* Same as yellow one, I think */
-}
 
  /* @media (min-width: 960px) {
   .MuiContainer-root.product-view {
