@@ -88,6 +88,7 @@ const App = () => {
   return <Router>
     <div>
       <NavBar 
+      categories={categories}
       basketItems={basketData.total_items} 
       totalCost={(basketData.subtotal && basketData.subtotal.formatted_with_symbol) || '0.00'} 
       />

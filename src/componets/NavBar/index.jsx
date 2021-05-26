@@ -1,11 +1,17 @@
-import { Container, AppBar, Toolbar, IconButton, Badge, Typography, Button } from '@material-ui/core';
+import { AppBar, IconButton, Badge, Typography, Button } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../img/MonaesEssentialsLogo.png';
+import Hamburger from '../../img/hamburger-svg.png';
+import DropMenu from '../DropMenu';
+import { useState } from 'react';
 import './style.css';
+import React from 'react';
 
-const NavBar = ({ basketItems, totalCost }) => {
+const NavBar = ({ basketItems, totalCost, categories }) => {
     const location = useLocation();
+    const [open, setOpen] = useState(false);
+
     return (
         <>
             <AppBar className='custom-navbar'>
@@ -25,14 +31,35 @@ const NavBar = ({ basketItems, totalCost }) => {
                             />
                         </Typography>
 
+                        <div className='dd-menu'>
+                            <button onClick={() => setOpen(!open)}>
+                                <img 
+                                    src={Hamburger} 
+                                    alt='Dropdown menu'
+                                    className='hamburger-menu'
+                                />
+                            </button>
+                            {open ? <DropMenu categories={categories}/> : null}
+                        </div>
 
                         <div className='nav-div'>
-                        <nav className='nav'>
-                            <Button href='/#Key Chains'>Key Chains</Button>
-                            <Button href='/#Resin Products'>Resin Products</Button>
-                            <Button href='/#Shirts'>Shirts</Button>
-                            <Button href='/#Tumblers'>Tumblers</Button>
-                            <Button href='/about'>About</Button>
+                        <nav>
+                            <ul className='nav'>
+                                {categories.map((category, index) => {
+                                    return (
+                                    <li className={category.name}>
+                                        <a href={`/#${category.name}`}>
+                                            {category.name}
+                                        </a>
+                                    </li>
+                                    )
+                                })}
+                                <li>
+                                    <a href='/about'>
+                                            About
+                                    </a>
+                                </li>
+                            </ul>
                         </nav>
                         </div>
 
