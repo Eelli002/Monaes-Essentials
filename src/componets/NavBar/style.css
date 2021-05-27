@@ -141,21 +141,41 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
-    width: 100vw;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
     height: 13vh;
     position: absolute;
 
     /* background-color: blue; */
 }
 
+.dd-menu {
+    width: 13vw;
+    /* align-self: flex-start; */
+    flex: 1;
+    display: flex;
+
+    background-color: red;
+}
+
+.dd-menu button {
+    border: none;
+}
+
+.hamburger-menu {
+    width: auto;
+    height: 3vh;
+
+    /* background-color: blue; */
+}
+
 .custom-title{
     height: 12vh;
-    width: 33vw;
-    /* flex: 1; */
+    width: 25vw;
     display: flex;
     justify-content: center;
+    align-self: center;
+    flex: 1;
 
     background-color: yellow;
 }
@@ -163,84 +183,112 @@
 .logo {
     width: auto;
     height: auto;
+    background-color: #ffffff;
 
     background-color: orange;
 }
 
-.dd-menu {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 13vw;
-    display: none;
-
-    background-color: red;
-}
-
-.hamburger-menu {
-    width: auto;
-    height: 6vh;
-    margin-left: 5vw;
-
-    background-color: blue;
-}
-
 .nav-div {
-    /* flex: 1; */
-    width: 40vw;
-    text-decoration: none;
-
-    background-color: blue;
-}
-
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.nav li {
-    text-decoration: none;
-    list-style: none;
-    font-size: 1.25vw;
+    display: none;
 }
 
 .basket-wrapper{
-    /* flex-grow: 1;
-    justify-content: flex-end;
-    display: flex; */
-    /* flex: 1; */
     display: flex;
     justify-content: center;
     width: 20vw;
+    flex: 1;
 
-    background-color: green;
+    /* background-color: green; */
 }
 
 .basket-wrapper .custom-basket{
-    /* font-size: 45px;
-    color: #bb86fc; */
+    color: #bb86fc;
 }
 
-.basket-wrapper strong{
-    /* color: #bb86fc; */
-
-    background-color: palegreen;
-}
-
-.nav .MuiButton-label{
-    /* color: #121212;
-    margin-left: 50px;
-    font-weight: bold;
-    font-size: 17px;
-    font-family: 'Dancing Script', cursive; */
-
-    background-color: brown;
-}
-.nav{
-    /* margin-top: 25px;
-    margin-left: 175px; */
-
-    background-color: pink;
+@media (min-width: 1000px) {
+    .MuiAppBar-root.custom-navbar{
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        justify-content: space-around;
+        height: 13vh;
+        position: absolute;
+    
+        /* background-color: blue; */
+    }
+    
+    .custom-title{
+        height: 12vh;
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+    
+        /* background-color: yellow; */
+    }
+    
+    .logo {
+        width: auto;
+        height: auto;
+    
+        /* background-color: orange; */
+    }
+    
+    .dd-menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 13vw;
+        display: none;
+    
+        /* background-color: red; */
+    }
+    
+    .hamburger-menu {
+        width: auto;
+        height: 6vh;
+        margin-left: 5vw;
+    
+        /* background-color: blue; */
+    }
+    
+    .nav-div {
+        width: 40vw;
+        text-decoration: none;
+    
+        /* background-color: blue; */
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav li {
+        list-style: none;
+        font-size: 1.75vw;
+    }
+    
+    .nav li a {
+        text-decoration: none;
+        font-family: 'Dancing Script', cursive;
+        font-weight: bold;
+    }
+    
+    .basket-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 20vw;
+    
+        /* background-color: green; */
+    }
+    
+    .basket-wrapper .custom-basket{
+        font-size: 2.5vw;
+        color: #bb86fc;
+    }
+    
 }

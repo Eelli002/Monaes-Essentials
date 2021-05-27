@@ -2,7 +2,7 @@ import { AppBar, IconButton, Badge, Typography, Button } from '@material-ui/core
 import { ShoppingCart } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../img/MonaesEssentialsLogo.png';
-import Hamburger from '../../img/hamburger-svg.png';
+import Hamburger from '../../img/hamburger-menu.png';
 import DropMenu from '../DropMenu';
 import { useState } from 'react';
 import './style.css';
@@ -17,6 +17,18 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
             <AppBar className='custom-navbar'>
                 {/* <Container>
                     <Toolbar className='main-container'> */}
+                    {/* <div className='dd-and-logo'> */}
+                        <div className='dd-menu'>
+                            <button onClick={() => setOpen(!open)}>
+                                <img 
+                                    src={Hamburger} 
+                                    alt='Dropdown menu'
+                                    className='hamburger-menu'
+                                />
+                            </button>
+                            {open ? <DropMenu categories={categories}/> : null}
+                        </div>
+
                         <Typography
                             component={Link}
                             to="/"
@@ -30,17 +42,7 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
                             className='logo'
                             />
                         </Typography>
-
-                        <div className='dd-menu'>
-                            <button onClick={() => setOpen(!open)}>
-                                <img 
-                                    src={Hamburger} 
-                                    alt='Dropdown menu'
-                                    className='hamburger-menu'
-                                />
-                            </button>
-                            {open ? <DropMenu categories={categories}/> : null}
-                        </div>
+                    {/* </div> */}
 
                         <div className='nav-div'>
                         <nav>
