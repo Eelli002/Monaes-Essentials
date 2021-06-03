@@ -145,17 +145,12 @@
     justify-content: space-between;
     height: 13vh;
     position: absolute;
-
-    /* background-color: blue; */
 }
 
 .dd-menu {
     width: 13vw;
-    /* align-self: flex-start; */
     flex: 1;
     display: flex;
-
-    /* background-color: red; */
 }
 
 .dd-menu button {
@@ -165,8 +160,6 @@
 .hamburger-menu {
     width: auto;
     height: 3vh;
-
-    /* background-color: blue; */
 }
 
 .custom-title{
@@ -176,16 +169,12 @@
     justify-content: center;
     align-self: center;
     flex: 1;
-
-    /* background-color: yellow; */
 }
 
 .logo {
     width: auto;
     height: auto;
     background-color: #ffffff;
-
-    /* background-color: orange; */
 }
 
 .nav-div {
@@ -197,15 +186,14 @@
     justify-content: center;
     width: 20vw;
     flex: 1;
-
-    /* background-color: green; */
 }
 
 .basket-wrapper .custom-basket{
+    font-size: 8vw;
     color: #bb86fc;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 720px) {
     .MuiAppBar-root.custom-navbar{
         background-color: #ffffff;
         display: flex;
@@ -255,6 +243,7 @@
     }
     
     .nav-div {
+        display: block;
         width: 40vw;
         text-decoration: none;
     
