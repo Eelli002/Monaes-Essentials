@@ -155,7 +155,7 @@
     flex: 1;
     display: flex;
 
-    background-color: red;
+    /* background-color: red; */
 }
 
 .dd-menu button {
@@ -177,7 +177,7 @@
     align-self: center;
     flex: 1;
 
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .logo {
@@ -185,7 +185,7 @@
     height: auto;
     background-color: #ffffff;
 
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .nav-div {

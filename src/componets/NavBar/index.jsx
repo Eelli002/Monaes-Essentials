@@ -1,4 +1,4 @@
-import { AppBar, IconButton, Badge, Typography, Button } from '@material-ui/core';
+import { AppBar, IconButton, Badge, Typography } from '@material-ui/core';
 import { ShoppingCart } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../img/MonaesEssentialsLogo.png';
@@ -26,7 +26,14 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
                                     className='hamburger-menu'
                                 />
                             </button>
-                            {open ? <DropMenu categories={categories}/> : null}
+                            {open 
+                                ? <DropMenu 
+                                    categories={categories} 
+                                    setOpen={setOpen} 
+                                    open={open}
+                                /> 
+                                : null
+                            }
                         </div>
 
                         <Typography
