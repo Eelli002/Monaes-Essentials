@@ -1,0 +1,55 @@
+.drop-menu {
+  width: 30vw;
+  height: 100vw;
+  position: absolute;
+  margin-top: 6vw;
+  border-radius: 3px;
+  background-color: #c9d1d9;
+  box-shadow: 0px 0px 10px 0px #121212;
+
+  /* background-color: blue; */
+}
+
+.dd-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30vw;
+  height: 100%;
+
+  /* background-color: green; */
+}
+
+.dd-nav-ul {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+
+  /* background-color: orange; */
+}
+
+.dd-items {
+  list-style: none;
+  text-decoration: none;
+  width: 30vw;
+  flex: 1; 
+  left: 0;
+  text-align: center;
+  /* border-top: 1px solid black; */
+
+  /* background-color: yellow; */
+}
+
+.dd-items a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #121212;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  /* border-bottom: 1px solid black; */
+}
