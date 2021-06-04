@@ -1,141 +1,3 @@
-/* .MuiAppBar-colorPrimary.custom-navbar{
-    background-color: #ffffff;
-}
-
-.MuiAppBar-colorPrimary.custom-navbar > div > div {
-    padding: 0;
-}
-
-.basket-wrapper{
-    flex-grow: 1;
-    justify-content: flex-end;
-    display: flex;
-}
-
-.custom-navbar .custom-title{
-    display: flex;
-}
-
-.custom-navbar .custom-title .logo{
-    width: 200px;
-    height: 130px;
-}
-
-.basket-wrapper .custom-basket{
-    font-size: 45px;
-    color: #bb86fc;
-}
-
-.basket-wrapper strong{
-    color: #bb86fc;
-}
-
-.nav .MuiButton-label{
-    color: #121212;
-    margin-left: 50px;
-    font-weight: bold;
-    font-size: 17px;
-    font-family: 'Dancing Script', cursive;
-}
-.nav{
-    margin-top: 25px;
-    margin-left: 175px;
-} */
-
-/* iPad Pro View */
-/* @media (max-width: 1024px) {
-    .MuiAppBar-root.custom-navbar{
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .custom-navbar .custom-title .logo{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: 175px;
-        height: 114px;
-    }
-
-    .basket-wrapper .custom-basket{
-        margin-right: 40px;
-    }
-
-    .nav .MuiButton-label{
-        font-size: 20px;
-    }
-    .nav{
-        margin-left: 50px;
-    }
-} */
-
-/* iPad (normal) view */
-/* @media (max-width: 768px) {
-    .basket-wrapper .custom-basket{
-        margin-right: 30px;
-    }
-
-    .nav .MuiButton-label{
-        font-size: 15px;
-        margin-left: 30px;
-        margin-right: 15px;
-    }
-
-    .nav{
-        display: flex;
-        flex-direction: row;
-        margin-left: 0px;
-    }
-} */
-
-/* Surface Duo */
-/* @media (max-width: 540px) {
-    .custom-navbar .custom-title .logo{
-        width: 150px;
-        height: 98px;
-        margin-left: 20px;
-    }
-
-    .basket-wrapper .custom-basket{
-        font-size: 40px;
-    }
-
-    .nav{
-        display: none;
-    }
-} */
-
-/* iPhone 6/7/8 Plus Display */
-/* @media (max-width: 414px) {
-    .custom-navbar .custom-title .logo{
-        width: 125px;
-        height: 81px;
-        margin-left: 5px;
-    }
-
-    .basket-wrapper .custom-basket{
-        font-size: 35px;
-        margin-right: 20px;
-    }
-} */
-
-/* iPhone 6/7/8/X and Smaller Display */
-/* @media (max-width: 375px) {
-    .basket-wrapper .custom-basket{
-        margin-right: 5px;
-    }
-} */
-
-
-
-
-
-
-
-
-
 .MuiAppBar-root.custom-navbar{
     background-color: #ffffff;
     display: flex;
@@ -195,33 +57,14 @@
 
 @media (min-width: 720px) {
     .MuiAppBar-root.custom-navbar{
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         width: 100vw;
         justify-content: space-around;
-        height: 10vh;
-        position: absolute;
-    
-        /* background-color: red; */
+        height: 11vh;
     }
     
     .custom-title{
         height: 10vh;
-        width: 25vw;
-        display: flex;
-        justify-content: center;
         flex: 2;
-    
-        /* background-color: yellow; */
-    }
-    
-    .logo {
-        width: auto;
-        height: auto;
-    
-        /* background-color: orange; */
     }
     
     .dd-menu {
@@ -233,8 +76,6 @@
         width: 45vw;
         text-decoration: none;
         flex: 4;
-    
-        /* background-color: blue; */
     }
     
     .nav {
@@ -242,15 +83,11 @@
         flex-direction: row;
         justify-content: space-between;
         padding-left: 0;
-
-        /* background-color: blueviolet; */
     }
     
     .nav li {
         list-style: none;
-        font-size: 3vw;
-
-        /* background-color: brown; */
+        font-size: 2.70vw;
     }
     
     .nav li a {
@@ -259,73 +96,61 @@
         font-weight: bold;
     }
     
-    .basket-wrapper{
-        display: flex;
-        justify-content: center;
-        width: 20vw;
-    
-        /* background-color: green; */
-    }
-    
     .basket-wrapper .custom-basket{
         font-size: 4.5vw;
-        color: #bb86fc;
     }
     
 }
 
 @media (min-width: 1000px) {
-    .MuiAppBar-root.custom-navbar{
+    .basket-wrapper .custom-basket{
+        font-size: 4.25vw;
+    }
+}
 
-    
+@media (min-width: 1250px) {
+    .MuiAppBar-root.custom-navbar{
+        height: 13vh;
         /* background-color: red; */
     }
-    
+
     .custom-title{
-
-    
-        /* background-color: yellow; */
-    }
-    
-    .logo {
-
-    
-        /* background-color: orange; */
-    }
-    
-    .dd-menu {
-
-    }
-    
-    .nav-div {
-
-    
-        /* background-color: blue; */
-    }
-    
-    .nav {
-
-
-        /* background-color: blueviolet; */
+        height: 12.5vh;
     }
     
     .nav li {
-
-
-        /* background-color: brown; */
-    }
-    
-    .nav li a {
-
-    }
-    
-    .basket-wrapper{
-
-    
-        /* background-color: green; */
+        font-size: 2.25vw;
     }
     
     .basket-wrapper .custom-basket{
+        font-size: 3.75vw;
+    }
+}
 
+@media (min-width: 1500px) {
+    .MuiAppBar-root.custom-navbar{
+        height: 13vh;
+    }
+    
+    .custom-title{
+        height: 12.5vh;
+    }
+
+    .nav li {
+        font-size: 2vw;
+    }
+    
+    .basket-wrapper .custom-basket{
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 1700px) { 
+    .nav li {
+        font-size: 2rem;
+    }
+
+    .basket-wrapper .custom-basket{
+        font-size: 3rem;
     }
 }
