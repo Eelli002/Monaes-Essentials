@@ -111,7 +111,6 @@
 @media (min-width: 1250px) {
     .MuiAppBar-root.custom-navbar{
         height: 13vh;
-        /* background-color: red; */
     }
 
     .custom-title{
@@ -128,14 +127,6 @@
 }
 
 @media (min-width: 1500px) {
-    .MuiAppBar-root.custom-navbar{
-        height: 13vh;
-    }
-    
-    .custom-title{
-        height: 12.5vh;
-    }
-
     .nav li {
         font-size: 2vw;
     }
@@ -154,3 +145,5 @@
         font-size: 3rem;
     }
 }
+
+/**/

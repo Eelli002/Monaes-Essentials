@@ -15,9 +15,6 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
     return (
         <>
             <AppBar className='custom-navbar'>
-                {/* <Container>
-                    <Toolbar className='main-container'> */}
-                    {/* <div className='dd-and-logo'> */}
                         <div className='dd-menu'>
                             <button onClick={() => setOpen(!open)}>
                                 <img 
@@ -35,7 +32,6 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
                                 : null
                             }
                         </div>
-
                         <Typography
                             component={Link}
                             to="/"
@@ -49,8 +45,6 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
                             className='logo'
                             />
                         </Typography>
-                    {/* </div> */}
-
                         <div className='nav-div'>
                         <nav>
                             <ul className='nav'>
@@ -71,8 +65,6 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
                             </ul>
                         </nav>
                         </div>
-
-                        
                         {location.pathname === '/basket' ? (
                             <div className='basket-wrapper'>
                                 <h2>
@@ -93,8 +85,6 @@ const NavBar = ({ basketItems, totalCost, categories }) => {
                                 </IconButton>
                             </div>
                         )}
-                    {/* </Toolbar>
-                </Container> */}
             </AppBar>
         </>
     );
