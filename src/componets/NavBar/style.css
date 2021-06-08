@@ -5,12 +5,12 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    height: 13vh;
+    height: 5rem;
     position: absolute;
 }
 
 .dd-menu {
-    width: 13vw;
+    width: 1.5rem;
     flex: 1;
     display: flex;
 }
@@ -21,12 +21,12 @@
 
 .hamburger-menu {
     width: auto;
-    height: 3vh;
+    height: 1.2rem;
 }
 
 .custom-title{
-    height: 12vh;
-    width: 25vw;
+    height: 4.8rem;
+    width: 7.5rem;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -46,12 +46,12 @@
 .basket-wrapper{
     display: flex;
     justify-content: center;
-    width: 20vw;
+    width: 7.5rem;
     flex: 1;
 }
 
 .basket-wrapper .custom-basket{
-    font-size: 8vw;
+    font-size: 1.8rem;
     color: #bb86fc;
 }
 
@@ -145,5 +145,3 @@
         font-size: 3rem;
     }
 }
-
-/**/
