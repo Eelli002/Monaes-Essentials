@@ -57,13 +57,12 @@
 
 @media (min-width: 720px) {
     .MuiAppBar-root.custom-navbar{
-        width: 100vw;
         justify-content: space-around;
-        height: 11vh;
+        height: 7rem;
     }
     
     .custom-title{
-        height: 10vh;
+        height: 6.4rem;
         flex: 2;
     }
     
@@ -110,11 +109,11 @@
 
 @media (min-width: 1250px) {
     .MuiAppBar-root.custom-navbar{
-        height: 13vh;
+        height: 7.9rem;
     }
 
     .custom-title{
-        height: 12.5vh;
+        height: 7.56rem;
     }
     
     .nav li {
