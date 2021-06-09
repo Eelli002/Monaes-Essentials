@@ -27,7 +27,7 @@ const Carousel = () => {
 
   return (
     <section className='carousel-banner'>
-      <button onClick={() => (banner === 0 ? setBanner(2) : setBanner(banner - 1))}>
+      <button onClick={() => banner === 0 ? setBanner(2) : setBanner(banner - 1)}>
         <img 
           src={LeftArrow}
           alt='Previous Banner Arrow'
@@ -37,7 +37,7 @@ const Carousel = () => {
 
       {bannerRender}
 
-      <button onClick={() => (banner === 2 ? setBanner(0) : setBanner(banner + 1))}>
+      <button onClick={() => banner === 2 ? setBanner(0) : setBanner(banner + 1)}>
         <img 
           src={RightArrow}
           alt='Next Banner Arrow'
