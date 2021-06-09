@@ -9,25 +9,41 @@ The purpose of this component is to render the proper banner depending on the cu
 
 import { React, useState } from 'react';
 import Banner from '../Banner';
-
+import LeftArrow from '../../img/';
+import RightArrow from '../../img/';
 import './carousel.css';
 
 const Carousel = () => {
   const [banner, setBanner] = useState(0);
 
-  // const bannerTimer = 
-  // after 5 second setBanner = banner =+ 1;
-  // if banner === 2, setBanner = 0;
-
-  const bannerRender = banner => {
+  const bannerRender = () => {
+    setInterval(function bannerTimer () {
+      banner === 2 ? setBanner(0) : setBanner(banner + 1);
+    }, 5000);
     if (banner === 2) return <Reviews/>
     else if (banner === 1) return <Specials />
     else return <Banner />
-  }
+  };
 
   return (
     <section className='carousel-banner'>
+      <button onClick={() => (banner === 0 ? setBanner(2) : setBanner(banner - 1))}>
+        <img 
+          src={LeftArrow}
+          alt='Previous Banner Arrow'
+          className='left-banner-arrow'
+        />
+      </button>
+
       {bannerRender}
+
+      <button onClick={() => (banner === 2 ? setBanner(0) : setBanner(banner + 1))}>
+        <img 
+          src={RightArrow}
+          alt='Next Banner Arrow'
+          className='right-banner-arrow'
+        />
+      </button>
     </section>
   )
 }
