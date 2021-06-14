@@ -9,8 +9,8 @@ The purpose of this component is to render the proper banner depending on the cu
 
 import { React, useState } from 'react';
 import Banner from '../Banner';
-import LeftArrow from '../../img/';
-import RightArrow from '../../img/';
+import LeftArrow from '../../img/arrowbuttonleft.png';
+import RightArrow from '../../img/arrowbutton.png';
 import './carousel.css';
 
 const Carousel = () => {
@@ -24,6 +24,9 @@ const Carousel = () => {
     else if (banner === 1) return <Specials />
     else return <Banner />
   };
+
+
+
 
   return (
     <section className='carousel-banner'>

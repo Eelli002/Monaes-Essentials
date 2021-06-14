@@ -4,6 +4,8 @@ import Banner from '../Banner';
 import Spinner from '../Spinner';
 import './style.css';
 
+// import Carousel from '../BannerCarousel/carousel';
+
 const Products = ({ categories, addProduct }) => {
     if (!categories.length) return <Spinner />
     return (
